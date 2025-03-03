@@ -5,9 +5,9 @@ From minimal-mistakes: https://github.com/mmistakes/minimal-mistakes/
 */
 var store = [{
         "title": "Archive",
-        "subtitle": null,
+        "subtitle": "",
         "excerpt": "",
-        "content": " ",
+        "content": "",
         "categories": null,
         "date": null,
         "tags": null,
@@ -15,9 +15,9 @@ var store = [{
         "img": null
       },{
         "title": "First post!",
-        "subtitle": null,
+        "subtitle": "",
         "excerpt": "This is my first post, how exciting!",
-        "content": "This is my first post, how exciting!  ",
+        "content": "This is my first post, how exciting!",
         "categories": [],
         "date": "2015-01-04",
         "tags": ["random","exciting-stuff"],
@@ -25,7 +25,7 @@ var store = [{
         "img": null
       },{
         "title": "Pirates arrrr",
-        "subtitle": null,
+        "subtitle": "",
         "excerpt": "Piracy is typically an act of robbery or criminal violence at sea. The term can include acts committed on land, in the air, or in other major bodies of water or on a shore. It does not normally include crimes committed against persons traveling on the same vessel as the perpetrator (e.g. one passenger stealing from others on the same vessel). The term has been used throughout history to refer to raids across land borders by non-state agents.",
         "content": "Piracy is typically an act of robbery or criminal violence at sea. The term can include acts committed on land, in the air, or in other major bodies of water...",
         "categories": [],
@@ -45,7 +45,7 @@ var store = [{
         "img": null
       },{
         "title": "Dear diary",
-        "subtitle": null,
+        "subtitle": "",
         "excerpt": "What is it with that Mary girl?  Dragging me to school every day. As if I had a choice.  What you don’t hear in those nursery rhymes is that she starves me if I don’t go to school with her; it’s the only way I can stay alive!  I’m thinking about being adopted by Little Bo Peep, sure I may get lost, but anything is better than being with Mary and those little brats at school (shudder, shudder).",
         "content": "What is it with that Mary girl? Dragging me to school every day. As if I had a choice. What you don’t hear in those nursery rhymes is that she...",
         "categories": [],
@@ -87,7 +87,7 @@ var store = [{
         "title": "Urban art",
         "subtitle": "Creativity is everywhere",
         "excerpt": "Urban artists can use anything as a canvas to express their art",
-        "content": "Urban artists can use anything as a canvas to express their art      Picture by Zarateman  ",
+        "content": "Urban artists can use anything as a canvas to express their art      Picture by Zarateman",
         "categories": ["picture"],
         "date": "2018-11-09",
         "tags": ["urban art","street","downtown","image"],
@@ -95,8 +95,8 @@ var store = [{
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Madrid_-_Graffiti_11.jpg/407px-Madrid_-_Graffiti_11.jpg"
       },{
         "title": "Dean Village",
-        "subtitle": null,
-        "excerpt": "  Dean Village (from dene, meaning ‘deep valley’) is a former village immediately northwest of the city centre of Edinburgh, Scotland. It was known as the “Water of Leith Village” and was the centre of a successful grain milling area for more than 800 years. At one time there were no fewer than eleven working mills there, driven by the strong currents of the Water of Leith.  From Wikipedia",
+        "subtitle": "",
+        "excerpt": "Dean Village (from dene, meaning ‘deep valley’) is a former village immediately northwest of the city centre of Edinburgh, Scotland. It was known as the “Water of Leith Village” and was the centre of a successful grain milling area for more than 800 years. At one time there were no fewer than eleven working mills there, driven by the strong currents of the Water of Leith.  From Wikipedia",
         "content": "Dean Village (from dene, meaning ‘deep valley’) is a former village immediately northwest of the city centre of Edinburgh, Scotland. It was known as the “Water of Leith Village” and...",
         "categories": ["picture"],
         "date": "2019-05-02",
@@ -107,7 +107,7 @@ var store = [{
         "title": "A landing page",
         "subtitle": "With image header",
         "excerpt": "A simple landing page with an image on top. Transparencies (png) works better on this combination.",
-        "content": "A simple landing page with an image on top. Transparencies (png) works better on this combination.  ",
+        "content": "A simple landing page with an image on top. Transparencies (png) works better on this combination.",
         "categories": ["landing-page"],
         "date": "2019-08-03",
         "tags": ["example","demo","layout","guest-author","image"],
