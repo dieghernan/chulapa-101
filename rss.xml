@@ -7,8 +7,8 @@
 		<description>Chulapa Jekyll Theme starter pack</description>
 		<language>en-US</language>
 		<copyright>(c) 2025, Your Name</copyright>	
-		<pubDate>Mon, 03 Mar 2025 20:50:50 +0000</pubDate>
-		<lastBuildDate>Mon, 03 Mar 2025 20:50:50 +0000</lastBuildDate>
+		<pubDate>Mon, 10 Mar 2025 02:59:31 +0000</pubDate>
+		<lastBuildDate>Mon, 10 Mar 2025 02:59:31 +0000</lastBuildDate>
 		<category>blog</category>
 		<ttl>60</ttl>
 		<atom:link href="https://dieghernan.github.io/chulapa-101/rss.xml" rel="self" type="application/rss+xml" />
@@ -21,8 +21,7 @@
 			<title>Current skin</title>
 			<description>
 				<![CDATA[	
- 				<h3><p>Showing al the different Bootstrap components available</p>
-</h3>
+ 				<h3>Showing al the different Bootstrap components available</h3>
     		<p>8 min.</p>
 				<div><p>This is a demo page showing the different components of Bootstrap and how they look on this site under the current configuration.</p>
 
@@ -232,7 +231,7 @@
       </div>
    </div>
    <div class="row">
-      <div class="col-lg-7">
+      <div class="col-lg-12">
          <p class="bs-component">
             <button type="button" class="btn btn-primary">Primary</button>
             <button type="button" class="btn btn-secondary">Secondary</button>
@@ -309,7 +308,9 @@
             <button type="button" class="btn btn-primary btn-sm">Small button</button>
          </div>
       </div>
-      <div class="col-lg-5">
+   </div>
+   <div class="row my-2">
+      <div class="col-lg-12">
          <p class="bs-component">
             <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
          </p>
@@ -465,7 +466,8 @@
             <h2 id="tables">Tables</h2>
          </div>
          <div class="bs-component table-responsive">
-            <table class="table table-hover">
+            <h3 id="tables-contextual">Contextual classes</h3>
+            <table class="table table-hover table-responsive w-100 d-block d-table">
                <thead>
                   <tr>
                      <th scope="col">Type</th>
@@ -539,6 +541,74 @@
             </table>
          </div>
          <div>
+            <h3 id="tables-stripped">Stripped rows</h3>
+            <table class="table table-striped table-responsive w-100 d-block d-table">
+               <thead>
+                 <tr>
+                   <th scope="col">#</th>
+                   <th scope="col">First</th>
+                   <th scope="col">Last</th>
+                   <th scope="col">Handle</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">1</th>
+                   <td>Mark</td>
+                   <td>Otto</td>
+                   <td>@mdo</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">2</th>
+                   <td>Jacob</td>
+                   <td>Thornton</td>
+                   <td>@fat</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">3</th>
+                   <td>Larry</td>
+                   <td>the Bird</td>
+                   <td>@twitter</td>
+                 </tr>
+               </tbody>
+             </table>
+         </div>
+         <div class="bs-component table-responsive">
+            <h3 id="tables-bordered">Bordered table</h3>
+         <table class="table table-bordered table-responsive w-100 d-block d-table">
+               <thead>
+                 <tr>
+                   <th scope="col">#</th>
+                   <th scope="col">First</th>
+                   <th scope="col">Last</th>
+                   <th scope="col">Handle</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th scope="row">1</th>
+                   <td>Mark</td>
+                   <td>Otto</td>
+                   <td>@mdo</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">2</th>
+                   <td>Jacob</td>
+                   <td>Thornton</td>
+                   <td>@fat</td>
+                 </tr>
+                 <tr>
+                   <th scope="row">3</th>
+                   <td>Larry</td>
+                   <td>the Bird</td>
+                   <td>@twitter</td>
+                 </tr>
+               </tbody>
+             </table>
+         </div>
+         <div>
+            <h3 id="base">Base table</h3>
+
             <table>
               <thead>
                 <tr>
@@ -1042,7 +1112,7 @@
          <div class="bs-component">
             <div class="alert alert-dismissible alert-warning">
                <button type="button" class="close" data-dismiss="alert">&times;</button>
-               <h5 class="alert-heading">Warning!</h5>
+               <h4 class="alert-heading">Warning!</h4>
                <p class="mb-0">Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, <a href="#" class="alert-link">vel scelerisque nisl consectetur et</a>.</p>
             </div>
          </div>
@@ -1207,11 +1277,11 @@
    </div>
    <div class="row">
       <div class="col-lg-12">
-         <h3>List groups</h3>
+         <h3 id="list-groups">List groups</h3>
       </div>
    </div>
    <div class="row">
-      <div class="col-lg-4">
+      <div class="col-lg-6">
          <div class="bs-component">
             <ul class="list-group">
                <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -1229,7 +1299,7 @@
             </ul>
          </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-6">
          <div class="bs-component">
             <div class="list-group">
                <a href="#" class="list-group-item list-group-item-action active">
@@ -1242,7 +1312,9 @@
             </div>
          </div>
       </div>
-      <div class="col-lg-4">
+      </div>
+   <div class="row mt-2">
+      <div class="col-lg-12">
          <div class="bs-component">
             <div class="list-group">
                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
@@ -1267,20 +1339,21 @@
    </div>
    <div class="row">
       <div class="col-lg-12">
-         <h3>Cards</h3>
+         <h3 id="cards">Cards</h3>
       </div>
    </div>
    <div class="row">
-      <div class="col-lg-4">
+      <div class="col-lg-6">
          <div class="bs-component">
-            <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+            <h4 id="cards-bg">Background</h4>
+            <div class="card bg-primary mb-3" style="max-width: 20rem;">
                <div class="card-header">Header</div>
                <div class="card-body">
                   <h5 class="card-title">Primary card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                </div>
             </div>
-            <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
+            <div class="card bg-secondary mb-3" style="max-width: 20rem;">
                <div class="card-header">Header</div>
                <div class="card-body">
                   <h5 class="card-title">Secondary card title</h5>
@@ -1331,44 +1404,45 @@
             </div>
          </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-6">
          <div class="bs-component">
-            <div class="card border-primary mb-3" style="max-width: 20rem;">
+            <h4 id="cards-out">Outline</h4>
+            <div class="card text-primary border-primary mb-3" style="max-width: 20rem;">
                <div class="card-header">Header</div>
                <div class="card-body">
                   <h5 class="card-title">Primary card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                </div>
             </div>
-            <div class="card border-secondary mb-3" style="max-width: 20rem;">
+            <div class="card text-secondary border-secondary mb-3" style="max-width: 20rem;">
                <div class="card-header">Header</div>
                <div class="card-body">
                   <h5 class="card-title">Secondary card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                </div>
             </div>
-            <div class="card border-success mb-3" style="max-width: 20rem;">
+            <div class="card text-success border-success mb-3" style="max-width: 20rem;">
                <div class="card-header">Header</div>
                <div class="card-body">
                   <h5 class="card-title">Success card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                </div>
             </div>
-            <div class="card border-danger mb-3" style="max-width: 20rem;">
+            <div class="card text-danger border-danger mb-3" style="max-width: 20rem;">
                <div class="card-header">Header</div>
                <div class="card-body">
                   <h5 class="card-title">Danger card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                </div>
             </div>
-            <div class="card border-warning mb-3" style="max-width: 20rem;">
+            <div class="card text-warning border-warning mb-3" style="max-width: 20rem;">
                <div class="card-header">Header</div>
                <div class="card-body">
                   <h5 class="card-title">Warning card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                </div>
             </div>
-            <div class="card border-info mb-3" style="max-width: 20rem;">
+            <div class="card text-info border-info mb-3" style="max-width: 20rem;">
                <div class="card-header">Header</div>
                <div class="card-body">
                   <h5 class="card-title">Info card title</h5>
@@ -1391,43 +1465,48 @@
             </div>
          </div>
       </div>
-      <div class="col-lg-4">
+   </div>
+   <div class="row">
+      <div class="col-lg-12">
          <div class="bs-component">
             <div class="card mb-3">
-               <h4 class="card-header">Card header</h4>
-               <div class="card-body">
-                  <h6 class="card-title">Special title treatment</h6>
-                  <h6 class="card-subtitle text-muted">Support card subtitle</h6>
-               </div>
-               <div style="height: 200px;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url('https://source.unsplash.com/1200x800/?madrid');"></div>
-               <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-               </div>
-               <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Cras justo odio</li>
-                  <li class="list-group-item">Dapibus ac facilisis in</li>
-                  <li class="list-group-item">Vestibulum at eros</li>
-               </ul>
-               <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-               </div>
-               <div class="card-footer text-muted">
-                  2 days ago
-               </div>
+              <h3 class="card-header">Card header</h3>
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200" aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice" viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
+                <rect width="100%" height="100%" fill="#868e96"></rect>
+                <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+              <div class="card-footer text-muted">
+                2 days ago
+              </div>
             </div>
             <div class="card">
-               <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-               </div>
-            </div>
+              <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>              
          </div>
-      </div>
    </div>
+</div>
 </div>
 <div class="bs-docs-section">
    <div class="row">
@@ -1488,8 +1567,7 @@
 			<title>The Acueduct of Segovia</title>
 			<description>
 				<![CDATA[	
- 				<h3><p>20 centuries ago</p>
-</h3>
+ 				<h3>20 centuries ago</h3>
     		<p>1 min.</p>
 				<div><p>The <strong>Aqueduct of Segovia</strong> (Spanish: <em>Acueducto de Segovia</em>; more accurately, the aqueduct bridge) is a Roman aqueduct in Segovia, Spain. It is one of the best-preserved elevated Roman aqueducts and the foremost symbol of Segovia, as evidenced by its presence on the city’s coat of arms.</p>
 </div>
@@ -1505,8 +1583,7 @@
 			<title>A landing page</title>
 			<description>
 				<![CDATA[	
- 				<h3><p>With image header</p>
-</h3>
+ 				<h3>With image header</h3>
     		<p>1 min.</p>
 				<div><p>A simple landing page with an image on top. Transparencies (<code class="language-plaintext highlighter-rouge">png</code>) works better on this combination.</p>
 </div>
@@ -1546,8 +1623,7 @@ to understand <code class="language-plaintext highlighter-rouge">.blockquote-foo
 			<title>Urban art</title>
 			<description>
 				<![CDATA[	
- 				<h3><p>Creativity is everywhere</p>
-</h3>
+ 				<h3>Creativity is everywhere</h3>
     		<p>1 min.</p>
 				<div><p>Urban artists can use anything as a canvas to express their art</p>
 
@@ -1567,8 +1643,7 @@ to understand <code class="language-plaintext highlighter-rouge">.blockquote-foo
 			<title>Flake it till you make it</title>
 			<description>
 				<![CDATA[	
- 				<h3><p>Excerpt from Soulshaping by Jeff Brown</p>
-</h3>
+ 				<h3>Excerpt from Soulshaping by Jeff Brown</h3>
     		<p>2 min.</p>
 				<div><p>Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?</p>
 
@@ -1588,8 +1663,7 @@ to understand <code class="language-plaintext highlighter-rouge">.blockquote-foo
 			<title>Test markdown</title>
 			<description>
 				<![CDATA[	
- 				<h3><p>Each post also has a subtitle</p>
-</h3>
+ 				<h3>Each post also has a subtitle</h3>
     		<p>1 min.</p>
 				<div><p>You can write regular <a href="http://markdowntutorial.com/">markdown</a> here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to <a href="http://markdowntutorial.com/">take 5 minutes to learn how to write in markdown</a> - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc.</p>
 
@@ -1661,8 +1735,7 @@ foo(3)
 			<title>To be</title>
 			<description>
 				<![CDATA[	
- 				<h3><p>… or not to be?</p>
-</h3>
+ 				<h3>… or not to be?</h3>
     		<p>1 min.</p>
 				<div><p>To be, or not to be–that is the question:
 Whether ‘tis nobler in the mind to suffer
@@ -1724,8 +1797,7 @@ Be all my sins remembered.</p>
 			<title>Soccer</title>
 			<description>
 				<![CDATA[	
- 				<h3><p>Best sport ever!</p>
-</h3>
+ 				<h3>Best sport ever!</h3>
     		<p>1 min.</p>
 				<div><p>From Wikipedia:</p>
 
