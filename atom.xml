@@ -3,7 +3,7 @@
 	<generator uri="https://dieghernan.github.io/chulapa" version="1.0.0">Chulapa</generator>
 	<link href="https://dieghernan.github.io/chulapa-101/atom.xml" rel="self" type="application/atom+xml" />
 	<link href="https://dieghernan.github.io/chulapa-101" rel="alternate" type="text/html" />
-	<updated>2025-03-10T14:39:11+00:00</updated>
+	<updated>2025-03-12T17:37:20+00:00</updated>
 	<id>https://dieghernan.github.io/chulapa-101/atom.xml</id>
 	<title>Chulapa 101 | Chulapa Jekyll Theme starter pack</title>
 	<subtitle>Chulapa Jekyll Theme starter pack</subtitle>
@@ -141,6 +141,31 @@
             &lt;h2 id=&quot;navbars&quot;&gt;Navbars&lt;/h2&gt;
          &lt;/div&gt;
          &lt;div class=&quot;bs-component&quot;&gt;
+            &lt;!-- Chulapa classic navbar expanding in lg or above --&gt;&lt;nav class=&quot;navbar navbar-expand-lg sticky-top navbar-chulapa border border-light my-2&quot;&gt;
+               &lt;div class=&quot;container-fluid mx-md-2&quot;&gt;
+                     &lt;a class=&quot;navbar-brand font-weight-bold&quot; href=&quot;https://dieghernan.github.io/chulapa-101/&quot;&gt;Default&lt;/a&gt;&lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarToggler&quot; aria-controls=&quot;navbarToggler&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+                        &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+                     &lt;/button&gt;
+                     &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarToggler&quot;&gt;
+                        &lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;&lt;li class=&quot;nav-item&quot;&gt;
+                              &lt;a class=&quot;nav-link &quot; href=&quot;https://dieghernan.github.io/chulapa-101/blog/&quot;&gt;Blog&lt;/a&gt;
+                           &lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;
+                              &lt;a class=&quot;nav-link &quot; href=&quot;https://dieghernan.github.io/chulapa-101/cheatsheets&quot;&gt;Cheatsheets&lt;/a&gt;
+                           &lt;/li&gt;&lt;li class=&quot;nav-item dropdown&quot;&gt;&lt;a class=&quot;nav-link dropdown-toggle &quot; href=&quot;#&quot; id=&quot;Extras&quot; role=&quot;button&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Extras&lt;/a&gt;
+                              &lt;div class=&quot;dropdown-menu dropdown-menu-right&quot; aria-labelledby=&quot;Extras&quot;&gt;&lt;a class=&quot;dropdown-item &quot; href=&quot;https://dieghernan.github.io/chulapa-101/tags&quot;&gt;Tags&lt;/a&gt;&lt;a class=&quot;dropdown-item &quot; href=&quot;https://dieghernan.github.io/chulapa-101/categories&quot;&gt;Categories&lt;/a&gt;&lt;a class=&quot;dropdown-item &quot; href=&quot;https://dieghernan.github.io/chulapa-101/archive&quot;&gt;Archive&lt;/a&gt;&lt;a class=&quot;dropdown-item &quot; href=&quot;https://dieghernan.github.io/chulapa-101/current-skin&quot;&gt;Current skin&lt;/a&gt;&lt;/div&gt;
+                           &lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;
+                              &lt;a class=&quot;nav-link &quot; href=&quot;https://dieghernan.github.io/chulapa/docs/01-install&quot;&gt;Docs&lt;/a&gt;
+                           &lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;
+                              &lt;a class=&quot;nav-link &quot; href=&quot;https://github.com/dieghernan/chulapa-101/generate&quot;&gt;Use this template&lt;/a&gt;
+                           &lt;/li&gt;&lt;li class=&quot;nav-item&quot;&gt;
+                              &lt;a class=&quot;nav-link &quot; href=&quot;https://dieghernan.github.io/chulapa-101/search&quot;&gt;
+                                 &lt;span class=&quot;d-md-none p-0 pr-1&quot;&gt;Search&lt;/span&gt;&lt;i class=&quot;fa fa-search&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;sr-only&quot;&gt;Search&lt;/span&gt;
+                              &lt;/a&gt;
+                           &lt;/li&gt;&lt;/ul&gt;
+                     &lt;/div&gt;&lt;/div&gt;
+            &lt;/nav&gt;
+
+
             &lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-primary&quot;&gt;
                &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Navbar&lt;/a&gt;
                &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarColor01&quot; aria-controls=&quot;navbarColor01&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
