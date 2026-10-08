@@ -7,8 +7,8 @@
 		<description>Chulapa Jekyll Theme starter pack</description>
 		<language>en-US</language>
 		<copyright>(c) 2026, Your Name</copyright>	
-		<pubDate>Thu, 08 Oct 2026 06:49:57 +0000</pubDate>
-		<lastBuildDate>Thu, 08 Oct 2026 06:49:57 +0000</lastBuildDate>
+		<pubDate>Thu, 08 Oct 2026 13:24:33 +0000</pubDate>
+		<lastBuildDate>Thu, 08 Oct 2026 13:24:33 +0000</lastBuildDate>
 		<category>blog</category>
 		<ttl>60</ttl>
 		<atom:link href="https://dieghernan.github.io/chulapa-101/rss.xml" rel="self" type="application/rss+xml" />
@@ -21,9 +21,10 @@
 			<title>Current skin</title>
 			<description>
 				<![CDATA[	
- 				<h3>Showing al the different Bootstrap components available</h3>
+ 				<h3>Bootstrap components with the current skin</h3>
     		<p>9 min.</p>
-				<div><p>This is a demo page showing the different components of Bootstrap and how they look on this site under the current configuration.</p>
+				<div><p>This page shows how Bootstrap components look with the current theme
+configuration.</p>
 
 <nav aria-label="Navigation" class="container-lg chulapa-pagination  ">
   <ul class="col-lg-8 offset-lg-2 pagination chulapa-pagination-round px-0 ">
@@ -33,10 +34,10 @@
 	  </a>
     </li>
     <li class="page-item border-0 disabled text-left ml-0 mr-auto d-none d-md-inline ">
-      <p class="page-link chulapa-label">The Acueduct of Segovia</p>
+      <p class="page-link chulapa-label">The Aqueduct of Segovia</p>
     </li>
     <li class="page-item border-0 disabled text-left ml-0 mr-auto d-none d-sm-inline d-md-none ">
-      <p class="page-link chulapa-label">The Acueduct o...</p>
+      <p class="page-link chulapa-label">The Aqueduct o...</p>
     </li>
 	  <li class="page-item disabled mx-auto invisible">
 	   <p class="page-link">|</p>
@@ -1642,18 +1643,21 @@
       <media:thumbnail url="https://picsum.photos/id/1018/2000/2000" /><guid isPermaLink="true">https://dieghernan.github.io/chulapa-101/20201231_current-skin/</guid>
       <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
 		</item><item>
-			<title>The Acueduct of Segovia</title>
+			<title>The Aqueduct of Segovia</title>
 			<description>
 				<![CDATA[	
  				<h3>20 centuries ago</h3>
     		<p>1 min.</p>
-				<div><p>The <strong>Aqueduct of Segovia</strong> (Spanish: <em>Acueducto de Segovia</em>; more accurately, the aqueduct bridge) is a Roman aqueduct in Segovia, Spain. It is one of the best-preserved elevated Roman aqueducts and the foremost symbol of Segovia, as evidenced by its presence on the city’s coat of arms.</p>
+				<div><p>The <strong>Aqueduct of Segovia</strong> (Spanish: <em>Acueducto de Segovia</em>; more accurately,
+the aqueduct bridge) is a Roman aqueduct in Segovia, Spain. It is one of the
+best-preserved elevated Roman aqueducts and the foremost symbol of Segovia, as
+evidenced by its presence on the city’s coat of arms.</p>
 </div>
 				]]>
 			</description>
 			<link>https://dieghernan.github.io/chulapa-101/20191127_acueduct-of-segovia/</link>
 			<category>posts</category>
-		    <category>downtown</category><category>image</category><category>landscape</category><category>project-links</category><category>trips</category><category>wikipedia</category><media:title type="html"><![CDATA[The Acueduct of Segovia ]]></media:title>
+		    <category>downtown</category><category>image</category><category>landscape</category><category>project-links</category><category>trips</category><category>wikipedia</category><media:title type="html"><![CDATA[The Aqueduct of Segovia ]]></media:title>
       <media:content url="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Acueducto_Segovia_noche.JPG/1024px-Acueducto_Segovia_noche.JPG" medium="image"/>
       <media:thumbnail url="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Acueducto_Segovia_noche.JPG/1024px-Acueducto_Segovia_noche.JPG" /><guid isPermaLink="true">https://dieghernan.github.io/chulapa-101/20191127_acueduct-of-segovia/</guid>
       <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
@@ -1663,7 +1667,8 @@
 				<![CDATA[	
  				<h3>With image header</h3>
     		<p>1 min.</p>
-				<div><p>A simple landing page with an image on top. Transparencies (<code class="language-plaintext highlighter-rouge">png</code>) works better on this combination.</p>
+				<div><p>A simple landing page with an image on top. PNG images with transparent
+backgrounds work well with this header style.</p>
 </div>
 				]]>
 			</description>
@@ -1685,8 +1690,7 @@
   <p class="blockquote-footer">From <a href="https://en.wikipedia.org/wiki/Dean_Village">Wikipedia</a></p>
 </blockquote>
 
-<p>That was a blockquote with a footer added via kramdown. See <a href="https://getbootstrap.com/docs/4.5/content/typography/">Bootstrap Typography</a> 
-to understand <code class="language-plaintext highlighter-rouge">.blockquote-footer</code> class.
+<p>This blockquote uses a footer added with <strong>kramdown</strong>. See <a href="https://getbootstrap.com/docs/4.5/content/typography/">Bootstrap typography</a> for details about the <code class="language-plaintext highlighter-rouge">.blockquote-footer</code> class.
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Well_Court%2C_Dean_Village%2C_Edinburgh_%2844485996381%29.jpg/800px-Well_Court%2C_Dean_Village%2C_Edinburgh_%2844485996381%29.jpg" alt="Dean Village" /></p>
 </div>
 				]]>
@@ -1703,11 +1707,11 @@ to understand <code class="language-plaintext highlighter-rouge">.blockquote-foo
 				<![CDATA[	
  				<h3>Creativity is everywhere</h3>
     		<p>1 min.</p>
-				<div><p>Urban artists can use anything as a canvas to express their art</p>
+				<div><p>Urban artists can use anything as a canvas to express their art.</p>
 
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Madrid_-_Graffiti_11.jpg/407px-Madrid_-_Graffiti_11.jpg" alt="Grunge is not dead" /></p>
 
-<p class="caption">Picture by <a href="https://commons.m.wikimedia.org/wiki/User:Zarateman">Zarateman</a></p>
+<p class="caption">Photo by <a href="https://commons.m.wikimedia.org/wiki/User:Zarateman">Zarateman</a>.</p>
 </div>
 				]]>
 			</description>
@@ -1738,18 +1742,18 @@ to understand <code class="language-plaintext highlighter-rouge">.blockquote-foo
 		    <category>manuscript</category><category>random</category><guid isPermaLink="true">https://dieghernan.github.io/chulapa-101/20150226_flake-it-till-you-make-it/</guid>
       <pubDate>Thu, 26 Feb 2015 00:00:00 +0000</pubDate>
 		</item><item>
-			<title>Test markdown</title>
+			<title>Test Markdown</title>
 			<description>
 				<![CDATA[	
  				<h3>Each post also has a subtitle</h3>
     		<p>1 min.</p>
-				<div><p>You can write regular <a href="http://markdowntutorial.com/">markdown</a> here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to <a href="http://markdowntutorial.com/">take 5 minutes to learn how to write in markdown</a> - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc.</p>
+				<div><p>Write <a href="http://markdowntutorial.com/">Markdown</a> and Jekyll converts it to HTML. The <a href="http://markdowntutorial.com/">Markdown tutorial</a> explains formatting such as bold text, italics, headings and tables.</p>
 
 <p><strong>Here is some bold text</strong></p>
 
 <h2 id="here-is-a-secondary-heading">Here is a secondary heading</h2>
 
-<p>Here’s a useless table:</p>
+<p>Here is a sample table:</p>
 
 <table>
   <thead>
@@ -1783,11 +1787,11 @@ to understand <code class="language-plaintext highlighter-rouge">.blockquote-foo
   </tbody>
 </table>
 
-<p>How about a yummy crepe?</p>
+<p>Here is a sample image:</p>
 
 <p><img src="http://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg" alt="Crepe" /></p>
 
-<p>Here’s a code chunk:</p>
+<p>Here is a code block:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var foo = function(x) {
   return(x + 5);
@@ -1863,7 +1867,11 @@ Be all my sins remembered.</p>
 				<![CDATA[	
  				
     		<p>1 min.</p>
-				<div><p>What is it with that Mary girl?  Dragging me to school every day. As if I had a choice.  What you don’t hear in those nursery rhymes is that she starves me if I don’t go to school with her; it’s the only way I can stay alive!  I’m thinking about being adopted by Little Bo Peep, sure I may get lost, but anything is better than being with Mary and those little brats at school (shudder, shudder).</p>
+				<div><p>What is it with that Mary girl? Dragging me to school every day. As if I had a
+choice. What you don’t hear in those nursery rhymes is that she starves me if I
+don’t go to school with her; it’s the only way I can stay alive! I’m thinking
+about being adopted by Little Bo Peep, sure I may get lost, but anything is
+better than being with Mary and those little brats at school (shudder, shudder).</p>
 </div>
 				]]>
 			</description>
@@ -1877,11 +1885,28 @@ Be all my sins remembered.</p>
 				<![CDATA[	
  				<h3>Best sport ever!</h3>
     		<p>1 min.</p>
-				<div><p>From Wikipedia:</p>
+				<div><p>From Wikipedia (sample text):</p>
 
-<p>Association football, more commonly known as football or soccer,[2] is a sport played between two teams of eleven players with a spherical ball. It is played by 250 million players in over 200 countries, making it the world’s most popular sport.[3][4][5][6] The game is played on a rectangular field with a goal at each end. The object of the game is to score by getting the ball into the opposing goal.</p>
+<!-- FIXME: This historical excerpt contains citation numbers without their references. Verify the statistics and restore source attribution before publishing it as factual content. -->
 
-<p>The goalkeepers are the only players allowed to touch the ball with their hands or arms while it is in play and then only in their penalty area. Outfield players mostly use their feet to strike or pass the ball, but may use their head or torso to strike the ball instead. The team that scores the most goals by the end of the match wins. If the score is level at the end of the game, either a draw is declared or the game goes into extra time and/or a penalty shootout depending on the format of the competition. The Laws of the Game were originally codified in England by The Football Association in 1863. Association football is governed internationally by the International Federation of Association Football (FIFA; French: Fédération Internationale de Football Association) which organises a World Cup every four years.[7]</p>
+<p>Association football, more commonly known as football or soccer,[2] is a sport
+played between two teams of eleven players with a spherical ball. It is played
+by 250 million players in over 200 countries, making it the world’s most popular
+sport.[3][4][5][6] The game is played on a rectangular field with a goal at each
+end. The object of the game is to score by getting the ball into the opposing
+goal.</p>
+
+<p>The goalkeepers are the only players allowed to touch the ball with their hands
+or arms while it is in play and then only in their penalty area. Outfield
+players mostly use their feet to strike or pass the ball, but may use their head
+or torso to strike the ball instead. The team that scores the most goals by the
+end of the match wins. If the score is level at the end of the game, either a
+draw is declared or the game goes into extra time and/or a penalty shootout
+depending on the format of the competition. The Laws of the Game were originally
+codified in England by The Football Association in 1863. Association football is
+governed internationally by the International Federation of Association Football
+(FIFA; French: Fédération Internationale de Football Association) which
+organises a World Cup every four years.[7]</p>
 </div>
 				]]>
 			</description>
@@ -1895,7 +1920,12 @@ Be all my sins remembered.</p>
 				<![CDATA[	
  				
     		<p>1 min.</p>
-				<div><p>Piracy is typically an act of robbery or criminal violence at sea. The term can include acts committed on land, in the air, or in other major bodies of water or on a shore. It does not normally include crimes committed against persons traveling on the same vessel as the perpetrator (e.g. one passenger stealing from others on the same vessel). The term has been used throughout history to refer to raids across land borders by non-state agents.</p>
+				<div><p>Piracy is typically an act of robbery or criminal violence at sea. The term can
+include acts committed on land, in the air, or in other major bodies of water or
+on a shore. It does not normally include crimes committed against persons
+traveling on the same vessel as the perpetrator (e.g. one passenger stealing
+from others on the same vessel). The term has been used throughout history to
+refer to raids across land borders by non-state agents.</p>
 </div>
 				]]>
 			</description>

@@ -1,7 +1,6 @@
-<!doctype html>
-<html lang="en-US"><head>
+<!doctype html><html lang="en-US"><head>
    <meta charset="utf-8">
-    <!-- Chulapa Jekyll Theme - v2.0.1.0001 -->
+    <!-- Chulapa Jekyll Theme - v2.1.0 -->
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
@@ -12,10 +11,9 @@
         {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://dieghernan.github.io/chulapa-101/blog/"
-      },
+      "@id": "https://dieghernan.github.io/chulapa-101/blog/",
+      "name": "Blog",
+      "description": "News and updates - Latest news",
       "headline":"Blog",
       "image": "https://dieghernan.github.io/chulapa-101/assets/img/site/banner-blog.png",
       "author": {
@@ -23,40 +21,37 @@
         "name":"Your Name"
       },
        "publisher": {
-        "@type": "Organization",
-        "name":"Your Name",
-        "url": "https://dieghernan.github.io/chulapa-101/",
-        "logo": {
-          "@type": "ImageObject",
-          "url":""
-        }
-      }
+  "@type": "Organization",
+  "name": "Your Name",
+  "url": "https://dieghernan.github.io/chulapa-101/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+}
     }
     </script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
+      "@id":"https://dieghernan.github.io/chulapa-101/blog/#breadcrumb",
       "itemListElement": [{
         "@type": "ListItem",
+        "@id":"https://dieghernan.github.io/chulapa-101/blog/#breadcrumb-1",
         "position": 1,
-        "name":"Home",
+        "name": "Home",
         "item":"https://dieghernan.github.io/chulapa-101/"
       },{
         "@type": "ListItem",
+        "@id":"https://dieghernan.github.io/chulapa-101/blog/#breadcrumb-2",
         "position": 2,
-        "name":"Blog"
+        "item": "https://dieghernan.github.io/chulapa-101/blog/",
+        "name": "Blog"
       }]
     }
     </script>
 <script type="application/ld+json">
-	{
-	"@context": "https://schema.org",
-	"@type": "WebPage",
-	"name":"Blog",
-	"description": "News and updates - Latest news"
-	}
-</script><script type="application/ld+json">
 {
   "@context" : "https://schema.org",
   "@type" : "Person",
@@ -67,6 +62,8 @@
   "description": "Publisher",
   "name" :"Your Name",
   "url" :"https://dieghernan.github.io/chulapa-101/"
+  ,  "sameAs" : [
+  ]
 }
 </script>
    <title>Blog | Chulapa 101</title>
@@ -81,19 +78,19 @@
    <meta name="copyright" content="Your Name" >
    <meta name="description" content="News and updates - Latest news">
    <meta name="thumbnail" content="https://dieghernan.github.io/chulapa-101/assets/img/site/banner-blog.png" >
-   <meta name="robots" content="index, follow"><meta name="keywords" content="">
+   <meta name="robots" content="index, follow">
     <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="lightskyblue">
     <!-- OpenGraph -->
    <meta property="og:title" content="Blog | Chulapa 101" >
-   <meta property="og:site_name" content="Chulapa 101 | Chulapa Jekyll Theme starter pack" >
+   <meta property="og:site_name" content="Chulapa 101" >
    <meta property="og:url" content="https://dieghernan.github.io/chulapa-101/blog/" >
    <meta property="og:type" content="website" >
-   <meta property="og:description" content="News and updates - Latest news" >
-   <meta property="og:locale" content="en_US" >
+   <meta property="og:description" content="News and updates - Latest news" ><meta property="og:locale" content="en_US">
    <meta property="og:image" content="https://dieghernan.github.io/chulapa-101/assets/img/site/banner-blog.png" >
     <!-- Twitter/X Cards -->
-   <meta name="twitter:card" content="summary_large_image"><!-- start custom head snippets -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:description" content="News and updates - Latest news"><!-- start custom head snippets -->
 <!-- this script is inserted before the css stylesheet -->
 <!-- end custom head snippets -->
 <!-- CSS -->
@@ -139,7 +136,8 @@
 						</a>
 					</li></ul>
 			</div></div>
-</nav><!-- Chulapa template for pagination --><header class="text-center header-chulapa"><div class="container-lg mt-2">
+</nav>
+	<!-- Chulapa template for pagination --><header class="text-center header-chulapa"><div class="container-lg mt-2">
        <div class="row">
            <div class="col-lg-8 offset-lg-2">
            <h1 class="p-name">Blog</h1><p class="lead chulapa-subtitle p-summary">News and updates</p>
@@ -159,7 +157,8 @@ style="background-image: url('https://picsum.photos/id/1018/2000/2000')">
 		<div class="col-sm">
 			<article class="card-body chulapa-links-hover-only">
 				<a href="https://dieghernan.github.io/chulapa-101/20201231_current-skin/"><h5 class="card-title">Current skin</h5></a>
-				<h6 class="card-subtitle mb-2 text-muted">Showing al the different Bootstrap components available</h6><div class="card-text">This is a demo page showing the different components of Bootstrap and how they look on this site under the current configuration.
+				<h6 class="card-subtitle mb-2 text-muted">Bootstrap components with the current skin</h6><div class="card-text">This page shows how Bootstrap components look with the current theme
+configuration.
 </div>
 			</article>
 			<div class="border-top-0 card-footer border-primary chulapa-bg-transparent">
@@ -178,8 +177,11 @@ style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thu
 		</a>
 		<div class="col-sm">
 			<article class="card-body chulapa-links-hover-only">
-				<a href="https://dieghernan.github.io/chulapa-101/20191127_acueduct-of-segovia/"><h5 class="card-title">The Acueduct of Segovia</h5></a>
-				<h6 class="card-subtitle mb-2 text-muted">20 centuries ago</h6><div class="card-text">The Aqueduct of Segovia (Spanish: Acueducto de Segovia; more accurately, the aqueduct bridge) is a Roman aqueduct in Segovia, Spain. It is one of the best-preserved elevated Roman aqueducts and the foremost symbol of Segovia, as evidenced by its presence on the city’s coat of arms.
+				<a href="https://dieghernan.github.io/chulapa-101/20191127_acueduct-of-segovia/"><h5 class="card-title">The Aqueduct of Segovia</h5></a>
+				<h6 class="card-subtitle mb-2 text-muted">20 centuries ago</h6><div class="card-text">The Aqueduct of Segovia (Spanish: Acueducto de Segovia; more accurately,
+the aqueduct bridge) is a Roman aqueduct in Segovia, Spain. It is one of the
+best-preserved elevated Roman aqueducts and the foremost symbol of Segovia, as
+evidenced by its presence on the city’s coat of arms.
 </div>
 			</article>
 			<div class="border-top-0 card-footer border-primary chulapa-bg-transparent">
@@ -198,7 +200,8 @@ style="background-image: url('https://dieghernan.github.io/chulapa/assets/img/si
 		<div class="col-sm">
 			<article class="card-body chulapa-links-hover-only">
 				<a href="https://dieghernan.github.io/chulapa-101/20190803_landing-page/"><h5 class="card-title">A landing page</h5></a>
-				<h6 class="card-subtitle mb-2 text-muted">With image header</h6><div class="card-text">A simple landing page with an image on top. Transparencies (png) works better on this combination.
+				<h6 class="card-subtitle mb-2 text-muted">With image header</h6><div class="card-text">A simple landing page with an image on top. PNG images with transparent
+backgrounds work well with this header style.
 </div>
 			</article>
 			<div class="border-top-0 card-footer border-primary chulapa-bg-transparent">

@@ -1,7 +1,6 @@
-<!doctype html>
-<html lang="en-US"><head>
+<!doctype html><html lang="en-US"><head>
    <meta charset="utf-8">
-    <!-- Chulapa Jekyll Theme - v2.0.1.0001 -->
+    <!-- Chulapa Jekyll Theme - v2.1.0 -->
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
@@ -12,10 +11,9 @@
         {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://dieghernan.github.io/chulapa-101/"
-      },
+      "@id":"https://dieghernan.github.io/chulapa-101/#website",
+      "name": "Chulapa 101",
+      "url": "https://dieghernan.github.io/chulapa-101/",
       "headline":"Chulapa 101",
       "image": "",
       "author": {
@@ -23,24 +21,27 @@
         "name":"Your Name"
       },
        "publisher": {
-        "@type": "Organization",
-        "name":"Your Name",
-        "url": "https://dieghernan.github.io/chulapa-101/",
-        "logo": {
-          "@type": "ImageObject",
-          "url":""
-        }
-      }
+  "@type": "Organization",
+  "name": "Your Name",
+  "url": "https://dieghernan.github.io/chulapa-101/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+}
     }
     </script>
 <script type="application/ld+json">
 	{
 	"@context": "https://schema.org",
 	"@type": "WebPage",
+	"@id": "https://dieghernan.github.io/chulapa-101/",
+	"isPartOf": {"@id":"https://dieghernan.github.io/chulapa-101/#website"},
 	"name":"Chulapa 101",
-	"description": "Starter pack - Click Use this template button above for cloning this repo and get started with Chulapa Jekyll theme."
+	"description": "Chulapa Jekyll Theme starter pack"
 	}
-</script><script type="application/ld+json">
+</script>
+<script type="application/ld+json">
 {
   "@context" : "https://schema.org",
   "@type" : "Person",
@@ -51,6 +52,8 @@
   "description": "Publisher",
   "name" :"Your Name",
   "url" :"https://dieghernan.github.io/chulapa-101/"
+  ,  "sameAs" : [
+  ]
 }
 </script>
    <title>Chulapa 101 | Chulapa Jekyll Theme starter pack</title>
@@ -63,21 +66,19 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <meta name="author" content="Your Name" >
    <meta name="copyright" content="Your Name" >
-   <meta name="description" content="Starter pack - Click Use this template button above for cloning this repo and get started with Chulapa Jekyll theme.">
-   <meta name="thumbnail" content="" >
-   <meta name="robots" content="index, follow"><meta name="keywords" content="">
+   <meta name="description" content="Chulapa Jekyll Theme starter pack">
+   <meta name="robots" content="index, follow">
     <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="lightskyblue">
     <!-- OpenGraph -->
    <meta property="og:title" content="Chulapa 101 | Chulapa Jekyll Theme starter pack" >
-   <meta property="og:site_name" content="Chulapa 101 | Chulapa Jekyll Theme starter pack" >
+   <meta property="og:site_name" content="Chulapa 101" >
    <meta property="og:url" content="https://dieghernan.github.io/chulapa-101/" >
    <meta property="og:type" content="website" >
-   <meta property="og:description" content="Starter pack - Click Use this template button above for cloning this repo and get started with Chulapa Jekyll theme...." >
-   <meta property="og:locale" content="en_US" >
-   <meta property="og:image" content="" >
+   <meta property="og:description" content="Chulapa Jekyll Theme starter pack" ><meta property="og:locale" content="en_US">
     <!-- Twitter/X Cards -->
-   <meta name="twitter:card" content="summary_large_image"><!-- start custom head snippets -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:description" content="Chulapa Jekyll Theme starter pack"><!-- start custom head snippets -->
 <!-- this script is inserted before the css stylesheet -->
 <!-- end custom head snippets -->
 <!-- CSS -->
@@ -123,8 +124,9 @@
 						</a>
 					</li></ul>
 			</div></div>
-</nav>	<header class="d-flex align-items-center hero-chulapa"><div class="container-lg py-4">
-   <h1 class="p-name">Chulapa on remote</h1><hr class="my-3">
+</nav>
+		<header class="d-flex align-items-center hero-chulapa"><div class="container-lg py-4">
+   <h1 class="p-name"><span class="chulapa">Chulapa</span> with a remote theme</h1><hr class="my-3">
    <p class="chulapa-subtitle p-summary">Starter pack</p>
  </div>
 </header>
@@ -132,22 +134,24 @@
 		<div class="row pt-2">
 			<aside class="col-lg-2 mt-lg-3 small"></aside>
 			<article id="maincontent" class="col-lg-8 mt-3 e-content">
-			<p>Click <a href="https://github.com/dieghernan/chulapa-101/generate"><strong>Use this template</strong></a> button above for cloning this repo and get started with <a href="https://github.com/dieghernan/chulapa">Chulapa Jekyll theme</a>.</p>
-<p>Contains basic configuration to get you a site with:</p>
+			<p>Create your own site using <a href="https://github.com/dieghernan/chulapa-101/generate">this template</a> and the <a href="https://github.com/dieghernan/chulapa"><span class="chulapa">Chulapa</span> Jekyll theme</a>.</p>
+<p>The template includes:</p>
 <ul>
  <li>Sample posts and <a href="./blog/">paginated blog index</a>.</li>
  <li>Sample collection with Markdown and kramdown cheatsheets and <a href="./cheatsheets">collection index</a>.</li>
- <li>Archive pages for posts grouped by year, category, and tag.</li>
- <li>Github Action for deploying the site.</li>
- <li>Demo page with the different Bootstrap components and how they look with the actual skin settings.</li>
+ <li>Archive pages for posts grouped by year, category and tag.</li>
+ <li>A GitHub Actions workflow for deploying the site.</li>
+ <li>A demo showing Bootstrap components with the current skin settings.</li>
  <li>Sample 404 page.</li>
- <li>Site search with Lunr.</li>
- <li>Sample <code class="language-plaintext highlighter-rouge">_config</code> with minimal configuration. <code class="language-plaintext highlighter-rouge">primary</code> color is set to <span class="text-primary">LightSkyBlue</span> and <code class="language-plaintext highlighter-rouge">autothemer</code> is enabled. <a href="https://dieghernan.github.io/chulapa/docs/03-theming">Learn how to customize your site</a>.</li>
- <li>Sample <code class="language-plaintext highlighter-rouge">algolia-search.yml</code> for using Algolia+GitHub Actions.</li>
- <li>Sample files for extending the theme with your own scripts and css.</li>
+ <li>Site search with Fuse.js.</li>
+ <li>Sample <code class="language-plaintext highlighter-rouge">_config.yml</code> following the current <span class="chulapa">Chulapa</span> configuration. <code class="language-plaintext highlighter-rouge">primary</code> color is set to <span class="text-primary">LightSkyBlue</span> and <code class="language-plaintext highlighter-rouge">autothemer</code> is enabled. <a href="https://dieghernan.github.io/chulapa/docs/03-theming">Learn how to customize your site</a>.</li>
+ <li>Sample <code class="language-plaintext highlighter-rouge">algolia-search.yml</code> for using Algolia with GitHub Actions.</li>
+ <li>Sample files for extending the theme with your own scripts and CSS.</li>
 </ul>
-<p>On addition, <code class="language-plaintext highlighter-rouge">jekyll-sitemap</code> generates your sitemap on <a href="./sitemap.xml">./sitemap.xml</a>, and Chulapa generates an Atom feed on <a href="./atom.xml">./atom.xml</a> and a RSS 2.0 feed on <a href="./rss.xml">./rss.xml</a>.</p>
-<p><a href="https://dieghernan.github.io/chulapa/docs/02-config">Configure as necessary</a> and replace sample content with your own.</p>
+<p>In addition, <strong>jekyll-sitemap</strong> generates a <a href="./sitemap.xml">sitemap</a>, and
+<span class="chulapa">Chulapa</span> generates an <a href="./atom.xml">Atom feed</a> and an <a href="./rss.xml">RSS 2.0 feed</a>.</p>
+<p><a href="https://dieghernan.github.io/chulapa/docs/02-config">Configure as necessary</a> and replace sample content with your own.
+Explore the <a href="/chulapa-101/theme-options">metadata and video example</a> and the <a href="/chulapa-101/minimal-header">minimal layout with a header</a>.</p>
 </article>
 		</div>
 	</main><!-- Footer -->
