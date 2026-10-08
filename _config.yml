@@ -1,95 +1,293 @@
-# Start here: change these three values for your site.
-title: My journal
-description: Stories, places and everyday discoveries
-subtitle: A personal journal
+# Chulapa 101 configuration
+# Start with site details in section A. Existing blog settings are ready to use.
+# Sections follow https://dieghernan.github.io/chulapa/docs/02-config
+# Blank settings use theme defaults where available.
+
+# Installation (see docs/01-install)
+# Keep GitHub metadata enabled.
+github: [metadata]
+
+# Choose one installation method.
+# Remote theme: append @TAG to pin an existing release.
+remote_theme: dieghernan/chulapa
+
+# Gem-based theme: remove remote_theme and add the gem to Gemfile.
+# theme: chulapa-jekyll
+# Add gem "chulapa-jekyll" to Gemfile.
+
+# A. Site settings/SEO
+# General site settings
+locale                  :     en-US #default["en-US"] format language-TERRITORY , e.g fr, en-GB, es-MX, pt-BR
+title                   :     My journal #default["repository_name"]
+title_separator         :     #default [" | "]
+subtitle                :     A personal journal #default [your-repository-tagline]
+description             :     Stories, places and everyday discoveries #default [your-repository-tagline]
+url                     :     https://dieghernan.github.io # Site origin, e.g. https://username.github.io or your custom domain.
+baseurl                 :     "" # Path prefix: /repository for a project site, "" for a root site.
+repository              :     dieghernan/chulapa-101 # Needs to be set (e.g. dieghernan/chulapa)
+words_per_minute        :     #default[200]
+timezone                :     # e.g. Europe/Madrid. See https://jekyllrb.com/docs/configuration/options/
+
+# A.1. SEO
+# Social locales: docs/04-layouts#social-locales-and-articles.
+og_locale               :     # Optional language_TERRITORY for social metadata
+og_locale_alternate     : []  # Optional list of translated locales, e.g. [es_ES, fr_FR]
+og_image                :     #default[author.avatar (see below)] or [github-avatar]
+twitter_site            :     #Avoid @
+# Site author
 author:
-  name: Your name
+  name                  : Your name # Name Surname Company
+  avatar                :     # Try a square file. Info: Your github avatar on https://github.com/[USERNAME].png
+  location              :     # New York, USA
+  links: [] # Uncomment a complete entry below to display an author link.
+    # - url:  # A link or email: https://twitter.com/jack, mail@example.com
+    #   icon: # A Fontawesome code: fab fa-twitter - see https://fontawesome.com/
+    #   label: # A Label for the icon: Twitter
+    # - url:  # Another link
+    #   icon: # Another FontAwesome code
+    #   label: # Another label
 
-# Replace dieghernan and chulapa-101 with your GitHub username and repository.
-# The Pages workflow supplies the deployment base path.
-repository: dieghernan/chulapa-101
-url: https://dieghernan.github.io
-baseurl: ""
-locale: en-US
+# A.1.1. Publisher
+# Optional JSON-LD publisher, independent of article authors.
+publisher:
+  type: # Organization (default) or Person; unsupported types use Organization
+  name: # Defaults to author.name or GitHub owner name
+  url: # Defaults to the site home URL
+  logo: # Organization only; defaults to og_image, author.avatar or GitHub avatar
+  image: # Person defaults to author.avatar or GitHub avatar; optional for Organization
 
-# Choose a predefined skin. No CSS customization is needed.
-# More skins: https://dieghernan.github.io/chulapa/skins
-chulapa-skin:
-  skin: gitdev
+# A.2. Font Awesome
+fa_version: #default ["6"] Use 6 or 5
+fa_kit_code: # Your FontAwesome kit code. If not provided a free hosted version (slower) will be loaded:  https://fontawesome.com/
+fa_v4_support: #Bool Add FontAwesome 4 support
+# A.3. Google Analytics
+# gtag_id: Google Analytics 4 measurement ID, e.g. G-XXXXXXXXXX.
+# analytics_id: legacy Universal Analytics ID; use gtag_id for new setups.
+# Leave unused IDs empty. Setting both loads both snippets.
+gtag_id                 :
+analytics_id            :
 
+# A.4. Search engines
+# Create a page with layout: search and a permalink matching landing_page.
+# Available free search engines:
+# - lunr https://lunrjs.com/
+# - algolia v4 https://www.algolia.com/ - needs further configuration
+# - google custom search engine https://cse.google.es/
+# - simplesearch: https://github.com/christian-fei/Simple-Jekyll-Search
+# - fusejs: https://fusejs.io/
+search:
+  provider              : fusejs # Enable search: lunr, algolia, google, simplesearch or fusejs.
+  label                 :  #default ["Search"] Text on navbar when search is enabled
+  landing_page          : /search.html #default ["/search"] Link on navbar
+  maxwords              :  #default [30] lunr simplesearch, fusejs only - May slow down your site build
+  show_attrib           : false #default ["true"] Show attributions/logo on search engine
+  algolia_logo          :  true # Check your plan's attribution requirements before hiding the logo.
+
+google_cse_id: #Your cse id
+# Algolia indexing uses jekyll-algolia. Adapt these indexing options to your site.
+algolia:
+  application_id        : #As per your Algolia account
+  index_name            : #As per your Algolia account
+  search_only_api_key   : #As per your Algolia account
+  files_to_exclude:         #Optional
+    - _layouts/*.html
+    - _includes/*.html
+    - _pages/search.md
+    - _pages/archive.md
+    - _pages/categories.md
+    - _pages/tags.md
+  extensions_to_index:      #Optional
+    - html
+    - md
+  searchableAttributes:     #Optional
+    - title
+    - headings
+    - unordered(content)
+    - unordered(subtitle)
+    - unordered(categories)
+    - unordered(collection)
+    - unordered(tags)
+  customRanking:            #Optional
+    - desc(include_on_search)
+    - desc(title)
+    - desc(content)
+    - desc(subtitle)
+
+# A.5. Comments
+# Enable show_comments on pages that should display comments.
+# For giscus, place its script in _includes/custom/giscus.html.
+comments:
+  provider:         # disqus, cusdis, giscus, cactus or welcomments
+  disqus_shortname: #Your site id : check your address https://{{ disqus.shortname }}.disqus.com/admin/
+  cactus_shortname: #Your site id as registered with Cactus.chat
+  cusdis_app_id:    # Your cusdis app id
+  cusdis_host:      # Optionally you can use your own host
+  website_id:       # Welcomments id
+
+# B. Navigation
+# Configure your navbar and the footer of your site
+
+# B.1. Navbar
+#   "brand" options would be set on the left side of your navbar
+#   "nav" would be set on the right side. Two-level nav links available
 navbar:
+  style     :  #default is the classical top navbar, set "fab" for a floating action button navbar or "dual"
+  expand    :  # At which device size expand the navbar menu. default[md] https://getbootstrap.com/docs/4.5/layout/overview/
   brand:
-    title: Home
+    title   : Home # Title in navbar
+    url     :  # default["url/baseurl"]
+    img     :  # A small image, ideally 30x30px.
   nav:
-    - title: About
-      url: /about/
-    - title: Archive
-      url: /archive/
-    - title: Tags
-      url: /tags/
-    - title: Categories
-      url: /categories/
+  - title: About # Label shown in the navbar
+    url: /about/
+  - title: Archive
+    url: /archive/
+  - title: Tags
+    url: /tags/
+  - title: Categories
+    url: /categories/
+  # Optional submenu:
+  # - title: More
+  #   child:
+  #     - title: A page
+  #       url: /a-page/
+
+# B.2. Footer
+# Social links displayed in the site footer.
 footer:
   links:
-    - label: RSS
-      icon: fa fa-rss
-      url: /atom.xml
-search:
-  provider: fusejs
-  landing_page: /search.html
-  show_attrib: false
+    - label : RSS # Label
+      icon  : fa fa-rss # Font Awesome icon code.
+      url   : /atom.xml # A link or email: https://twitter.com/jack, mail@example.com
+  copyright: # default is Â© <year> <name>
 
-# You can leave the settings below as they are.
-remote_theme: dieghernan/chulapa
+# C. Theming Chulapa
+# Full reference: docs/03-theming.
+# C.1. Google Fonts
+# Google Fonts https://fonts.google.com/, add as many as you need
+googlefonts:
+ # - url : # 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'
+
+# C.2. Skin, syntax highlighting and colors
+chulapa-skin:
+  highlight     :  # default["default"]
+  skin         : gitdev # Optional predefined skins
+  autothemer    :  # Bool: Use autotheming
+  vars          :
+    primary     :   #default ["#007bff"] - Bootstrap blue
+
+# D. Jekyll defaults and collections
+# Posts are enabled by Jekyll. Optional collections can be added later.
+
+# D.1. Pagination
+# Home page pagination: index.html. https://jekyllrb.com/docs/pagination/
+paginate: 5
+paginate_path: "/page:num/"
+paginator_maxnum: 3  #default[3] Custom: max of number to be displayed on the paginator
+
+# D.2. Collections and permalinks
+# https://jekyllrb.com/docs/step-by-step/09-collections/
+collections: {} # Add named collections here when you need them.
+# Example:
+# collections:
+#   projects:
+#     output: true
+#     permalink: /projects/:name/
+collections_dir     : "" # Empty means the site root.
+permalink           : /blog/:year/:month/:day/:title/
+
+# D.3. Front matter defaults
+# https://jekyllrb.com/docs/configuration/front-matter-defaults/
+# Theme page options: docs/04-layouts.
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+      robots             : "index, follow" # Override per page, e.g. "noindex, follow"
+      header_type: "base"
+      include_on_search   : false
+      cloudtag_url        : "/tags/"       #This is where the link on tags would redirect
+      cloudcategory_url   : "/categories/" #This is where the link on categories would redirect
+  -
+    scope:
+      path: "_pages"
+    values:
+      include_on_search: true
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      header_type       : "post"
+      include_on_search : true
+      include_on_feed   : true
+      show_date         : true
+      show_related      : # Optional: set true to enable.
+      show_bottomnavs   : # Optional: set true to enable.
+      show_sociallinks  : # Optional: set true to enable.
+      show_comments     : # Optional: set true to enable.
+      show_tags         : true
+      show_categories   : true
+      show_author       : true
+      show_toc          : false
+# XX. Other settings
+# Adapt Jekyll settings to your site; keep jekyll-include-cache enabled.
+# XX.1. HTML compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  blanklines: true
+
+# XX.2. Plugins
 plugins:
-  - jekyll-paginate
   - jekyll-github-metadata
+  - jekyll-paginate
   - jekyll-include-cache
   - jekyll-sitemap
   - jekyll-remote-theme
-permalink: /blog/:year/:month/:day/:title/
-paginate: 5
-paginate_path: /page:num/
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: default
-      header_type: base
-      include_on_search: false
-      cloudtag_url: /tags/
-      cloudcategory_url: /categories/
-  - scope:
-      path: _pages
-    values:
-      include_on_search: true
-  - scope:
-      path: ""
-      type: posts
-    values:
-      header_type: post
-      include_on_search: true
-      include_on_feed: true
-      show_date: true
-      show_author: true
-      show_tags: true
-      show_categories: true
 
-include:
-  - _pages
+# XX.3. Files to exclude or include
 exclude:
   - AGENTS.md
   - LICENSE
   - README.md
   - Gemfile
-  - Gemfile.lock
   - vendor
+  - Gemfile.lock
   - "*.Rproj"
+
+include:
+ - _pages
+
+# XX.4. Conversion
 markdown: kramdown
 highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# XX.5. Markdown processing
 kramdown:
   input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  footnote_backlink: '&uarr;'
+  entity_output: as_char
+  toc_levels: 2..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# XX.6. Sass/SCSS
 sass:
-  style: compressed
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
   quiet_deps: true
-  silence_deprecations: [import, global-builtin, color-functions, abs-percent, function-units]
+  silence_deprecations:
+    - import
+    - global-builtin
+    - color-functions
+    - abs-percent
+    - function-units

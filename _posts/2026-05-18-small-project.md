@@ -19,7 +19,7 @@ The notebook does not need to be beautiful. It needs to be easy to open.
 
 - [The Public Domain Review](https://publicdomainreview.org/) for unexpected stories and visual inspiration.
 - [Project Gutenberg](https://www.gutenberg.org/) for books to browse and return to.
-- [Chulapa](https://dieghernan.github.io/chulapa/) for the theme behind this journal.
+- [<span class="chulapa">Chulapa</span>](https://dieghernan.github.io/chulapa/) for the theme behind this journal.
 
 ## The next step
 
