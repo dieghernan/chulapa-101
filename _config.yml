@@ -27,6 +27,8 @@ navbar:
       url: /archive/
     - title: Tags
       url: /tags/
+    - title: Categories
+      url: /categories/
 footer:
   links:
     - label: RSS
@@ -40,11 +42,14 @@ search:
 # You can leave the settings below as they are.
 remote_theme: dieghernan/chulapa
 plugins:
+  - jekyll-paginate
   - jekyll-github-metadata
   - jekyll-include-cache
   - jekyll-sitemap
   - jekyll-remote-theme
 permalink: /blog/:year/:month/:day/:title/
+paginate: 5
+paginate_path: /page:num/
 defaults:
   - scope:
       path: ""
@@ -53,6 +58,7 @@ defaults:
       header_type: base
       include_on_search: false
       cloudtag_url: /tags/
+      cloudcategory_url: /categories/
   - scope:
       path: _pages
     values:
@@ -67,6 +73,7 @@ defaults:
       show_date: true
       show_author: true
       show_tags: true
+      show_categories: true
 
 include:
   - _pages

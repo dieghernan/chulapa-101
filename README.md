@@ -1,6 +1,6 @@
 # Chulapa 101
 
-A ready-to-use personal blog based on [Chulapa's minimal blog example](https://github.com/dieghernan/chulapa/tree/main/examples/personal-blog). Its home page lists three sample posts: a welcome, a walk with a local photograph and a short project note. It includes About, an archive, tags, Fuse.js search and RSS, using the predefined Gitdev skin without color or CSS overrides.
+A ready-to-use personal blog with a small content structure inspired by [Minimal Mistakes' GitHub Pages starter](https://github.com/mmistakes/mm-github-pages-starter), adapted to [Chulapa](https://github.com/dieghernan/chulapa). It includes three sample posts, a paginated home page, About, year, category and tag archives, Fuse.js search and RSS. It uses the predefined Gitdev skin without color or CSS overrides.
 
 [See the live site](https://dieghernan.github.io/chulapa-101/).
 
@@ -19,9 +19,9 @@ The **Actions** tab shows the deployment progress. When it finishes, **Settings 
 | What to change | File or folder |
 | --- | --- |
 | Site title, description and your name | `_config.yml` |
-| Home page heading and introduction | `index.md` |
+| Home page heading and introduction | `index.html` |
 | About page | `_pages/about.md` |
-| Archive and tag pages | `_pages/archive.md` and `_pages/tags.md` |
+| Archive pages | `_pages/archive.md`, `_pages/categories.md` and `_pages/tags.md` |
 | Blog posts | `_posts/` |
 | Images | `assets/img/` |
 
@@ -40,7 +40,19 @@ Use the publication date in the filename. Posts with a future date remain unpubl
 
 Replace the sample text and the `hello@example.com` contact address on About before publishing your own content. The sample photograph is credited to Quique Olivar on Unsplash in its post. Replace it with your own image and update the alternative text to describe it.
 
-The archive uses Chulapa's `archive` layout and the tag page uses `cloudtag`, both limited to posts. Post tags link to the corresponding topic. Fuse.js indexes posts and About; the archive, tag index, search and 404 pages are excluded to avoid duplicate search results. New pages under `_pages/` are searchable unless their front matter sets `include_on_search: false`.
+The archive pages use Chulapa's `archive`, `cloudcategory` and `cloudtag` layouts, limited to posts. Post categories and tags link to the corresponding topic. Fuse.js indexes posts and About; archive pages, the home page, search and 404 are excluded to avoid duplicate search results. New pages under `_pages/` are searchable unless their front matter sets `include_on_search: false`.
+
+The home page shows five posts per page. Change `paginate` in `_config.yml` to adjust this; keep the home page named `index.html` because Jekyll's pagination plugin requires it. Navigation, author details and footer links are configured in `_config.yml`. Chulapa supplies the layouts, includes and styles, so the starter does not need local theme overrides.
+
+```text
+_config.yml          Site settings and navigation
+_pages/              About, archives, search and 404
+_posts/              Your blog posts
+assets/img/          Your images
+index.html           Paginated home page
+Gemfile              Local build dependencies
+.github/workflows/   Existing deployment workflows
+```
 
 ## Choose a skin
 

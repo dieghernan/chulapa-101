@@ -11,6 +11,7 @@ group :jekyll_plugins do
 end
 
 # Hard dependencies
+gem 'jekyll-paginate'
 gem 'kramdown-parser-gfm'
 gem 'ostruct'
 gem 'fiddle'

@@ -1,0 +1,32 @@
+---
+layout: default
+title: My journal
+subtitle: Stories, places and everyday discoveries
+header_type: base
+include_on_search: false
+---
+
+<p>A place for city walks, small creative projects and the things I notice along
+the way. I write to remember the details and make room for the next idea.</p>
+
+{% include_cached components/indexcards.html cacheddocs=paginator.posts cachedlimit=site.paginate %}
+
+{% if paginator.total_pages > 1 %}
+<nav aria-label="Blog pages" class="mt-4">
+  <ul class="pagination justify-content-center">
+    {% if paginator.previous_page %}
+    <li class="page-item">
+      <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}" rel="prev">Previous</a>
+    </li>
+    {% endif %}
+    <li class="page-item disabled">
+      <span class="page-link" aria-current="page">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    </li>
+    {% if paginator.next_page %}
+    <li class="page-item">
+      <a class="page-link" href="{{ paginator.next_page_path | relative_url }}" rel="next">Next</a>
+    </li>
+    {% endif %}
+  </ul>
+</nav>
+{% endif %}
