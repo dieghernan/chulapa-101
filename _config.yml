@@ -266,6 +266,7 @@ plugins:
 
 # XX.3. Files to exclude or include
 exclude:
+  - AGENTS.md
   - LICENSE
   - README.md
   - Gemfile
