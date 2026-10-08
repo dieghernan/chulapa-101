@@ -8,9 +8,9 @@ tags: [starter,syntax,kramdown]
 
 ## What’s kramdown?
 
-**kramdown** supercharges Markdown with some interesting features.
+**kramdown** extends Markdown with features such as tables of contents and inline attributes.
 
-**kramdown** is the default Jekyll Markdown processor. When creating your site with Jekyll, you can use the standard Markdown syntax plus some specific **kramdown** syntax. Jekyll would render your Markdown/**kramdown** into HTML.
+**kramdown** is the default Jekyll Markdown processor. When creating your site with Jekyll, you can use the standard Markdown syntax plus some specific **kramdown** syntax. Jekyll renders your Markdown with **kramdown** to produce HTML.
 
 <https://kramdown.gettalong.org/quickref.html>
 
@@ -67,10 +67,9 @@ Second level header
 
 ###### H6 header
 
+## Create a table of contents
 
-## Create a table of contents:
-
-On your `_config.yaml`, define the levels of your toc:
+In `_config.yml`, set the heading levels to include in the table of contents:
 
 ```yaml
 kramdown:
@@ -79,19 +78,20 @@ kramdown:
 
 ```
 
-Ignore specific headers:
+Exclude specific headings:
 
 ```markdown
 
-## This header would be ignored on the toc.
+## This heading is excluded from the table of contents.
 {:.no_toc}
 
 ```
 
-### This header would be ignored on the toc.
+### This heading is excluded from the table of contents.
 {:.no_toc}
 
-Add this to generate table
+Add this list marker and the `{:toc}` attribute to generate the table of
+contents:
 
 ```markdown
 
@@ -103,7 +103,6 @@ Add this to generate table
 
 * This line is needed, but won't appear. Replace '*' with '1' to create a numbered list.
 {:toc}
-
 
 ```markdown
 > A sample blockquote.
@@ -131,7 +130,6 @@ and another term
 > ## Headers work too
 > This is the outer quote again.
 
-
 term
 : definition
 : another definition
@@ -139,7 +137,6 @@ term
 another term
 and another term
 : and a definition for the term
-
 
 ```markdown
 | Header1 | Header2 | Header3 |
@@ -165,7 +162,6 @@ and another term
 |=====
 | Foot1   | Foot2   | Foot3
 {: rules="groups"}
-
 
 ```markdown
 This is a paragraph
@@ -195,7 +191,6 @@ This is a paragraph … paragraph continues here.
 
 Extensions can also be used inline **see**!
 
-
 ```markdown
 A [link](http://kramdown.gettalong.org "hp")
 to the homepage.
@@ -212,10 +207,10 @@ footnote[^1].
 This is an HTML
 example.
 
-*[HTML]: Hyper Text Markup Language
+*[HTML]: Hypertext Markup Language
 
 
-This is **Chulapa**{:.chulapa} *red*{: style="color: red"}.
+This is <span class="chulapa">Chulapa</span> *red*{: style="color: red"}.
 ```
 
 A [link](http://kramdown.gettalong.org "hp")
@@ -229,13 +224,12 @@ footnote[^1].
 
 [^1]: And here is the definition.
 
-
 This is an HTML
 example.
 
-*[HTML]: Hyper Text Markup Language
+*[HTML]: Hypertext Markup Language
 
-This is **Chulapa**{:.chulapa} *red*{: style="color: red"}.
+This is <span class="chulapa">Chulapa</span> *red*{: style="color: red"}.
 
 ```markdown
 <div markdown="1">This is the first part of a para,

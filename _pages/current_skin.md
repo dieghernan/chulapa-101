@@ -1,6 +1,6 @@
 ---
 title: Current skin
-subtitle: Showing all the different Bootstrap components available
+subtitle: Bootstrap components with the current skin
 permalink: /current-skin
 date: 2015-03-03
 last_modified_at: 2018-02-07
@@ -18,14 +18,11 @@ show_breadcrumb   : true
 show_toc          : true
 ---
 
-This is a demo page showing the different components of Bootstrap and how they look on this site under the current configuration.
-
-
+This page shows how Bootstrap components look with the current theme
+configuration.
 
 {% include components/navbeforeafter.html -%}
 {% include components/categories.html-%}
 {% include components/tags.html-%}
-
-
 
 {% include snippets/bootstrapdemo.html  %}

@@ -1,7 +1,6 @@
 ---
 layout: search
 title: Search
-subtitle: 
+robots: "noindex, follow"
 permalink: /search.html
 ---
-

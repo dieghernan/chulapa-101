@@ -1,25 +1,27 @@
 ---
 layout: default
-title: Chulapa on remote
+title: '<span class="chulapa">Chulapa</span> with a remote theme'
 header_type: hero
 subtitle: Starter pack
 ---
 
-Click [**Use this template**](https://github.com/dieghernan/chulapa-101/generate) button above for cloning this repo and get started with [Chulapa Jekyll theme](https://github.com/dieghernan/chulapa).
+Create your own site using [this template](https://github.com/dieghernan/chulapa-101/generate) and the [<span class="chulapa">Chulapa</span> Jekyll theme](https://github.com/dieghernan/chulapa).
 
-Contains basic configuration to get you a site with:
+The template includes:
 
 - Sample posts and [paginated blog index](./blog/).
 - Sample collection with Markdown and kramdown cheatsheets and [collection index](./cheatsheets).
-- Archive pages for posts grouped by year, category, and tag.
-- Github Action for deploying the site.
-- Demo page with the different Bootstrap components and how they look with the actual skin settings.
+- Archive pages for posts grouped by year, category and tag.
+- A GitHub Actions workflow for deploying the site.
+- A demo showing Bootstrap components with the current skin settings.
 - Sample 404 page.
-- Site search with Lunr.
-- Sample `_config` with minimal configuration. `primary` color is set to <span class="text-primary">LightSkyBlue</span> and `autothemer` is enabled. [Learn how to customize your site](https://dieghernan.github.io/chulapa/docs/03-theming).
-- Sample `algolia-search.yml` for using Algolia+GitHub Actions.
-- Sample files for extending the theme with your own scripts and css.
+- Site search with Fuse.js.
+- Sample `_config.yml` following the current <span class="chulapa">Chulapa</span> configuration. `primary` color is set to <span class="text-primary">LightSkyBlue</span> and `autothemer` is enabled. [Learn how to customize your site](https://dieghernan.github.io/chulapa/docs/03-theming).
+- Sample `algolia-search.yml` for using Algolia with GitHub Actions.
+- Sample files for extending the theme with your own scripts and CSS.
 
-On addition, `jekyll-sitemap` generates your sitemap on [./sitemap.xml](./sitemap.xml), and Chulapa generates an Atom feed on [./atom.xml](./atom.xml) and a RSS 2.0 feed on [./rss.xml](./rss.xml).
+In addition, **jekyll-sitemap** generates a [sitemap](./sitemap.xml), and
+<span class="chulapa">Chulapa</span> generates an [Atom feed](./atom.xml) and an [RSS 2.0 feed](./rss.xml).
 
 [Configure as necessary](https://dieghernan.github.io/chulapa/docs/02-config) and replace sample content with your own.
+Explore the [metadata and video example]({{ "/theme-options" | relative_url }}) and the [minimal layout with a header]({{ "/minimal-header" | relative_url }}).

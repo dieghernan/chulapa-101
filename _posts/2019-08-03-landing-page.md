@@ -21,4 +21,5 @@ author:
       icon: "fab fa-linkedin"
 ---
 
-A simple landing page with an image on top. Transparencies (`png`) works better on this combination.
+A simple landing page with an image on top. PNG images with transparent
+backgrounds work well with this header style.

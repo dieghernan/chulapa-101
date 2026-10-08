@@ -8,19 +8,22 @@ tags: [starter,syntax,markdown]
 
 ## What’s Markdown?
 
-Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. Created by [John Gruber](https://daringfireball.net/projects/markdown/) in 2004, Markdown is now one of the world’s most popular markup languages.
+Markdown is a lightweight markup language that you can use to add formatting elements to plain text documents. Created by [John Gruber](https://daringfireball.net/projects/markdown/) in 2004, Markdown is now one of the world’s most popular markup languages.
 
 <https://www.markdownguide.org/basic-syntax/>
 
 ## Markdown cheatsheet
 
+The following examples show Markdown syntax and its rendered output. Some features,
+such as strikethrough, task lists and footnotes, depend on the Markdown processor.
+This template uses **kramdown** with its GFM parser. The `another-page.html` link
+is a placeholder; replace it with the path to a page on your site.
+
 ```markdown
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 ```
 
-
 Text can be **bold**, _italic_, or ~~strikethrough~~.
-
 
 ```markdown
 [Link to another page](./another-page.html).
@@ -63,7 +66,6 @@ and this paragraph.
 ##### Header 5
 
 ###### Header 6
-
 
 ```markdown
 > This is a blockquote following a header.
@@ -75,10 +77,9 @@ and this paragraph.
 >
 > When something is important enough, you do it even if the odds are not in your favor.
 
-
 ~~~ markdown
 ```js
-// Javascript code with syntax highlighting.
+// JavaScript code with syntax highlighting.
 var fun = function lang(l) {
   dateformat.i18n = require('./lang/' + l)
   return true;
@@ -107,7 +108,7 @@ end
 ~~~
 
 ```js
-// Javascript code with syntax highlighting.
+// JavaScript code with syntax highlighting.
 var fun = function lang(l) {
   dateformat.i18n = require('./lang/' + l)
   return true;
@@ -139,20 +140,20 @@ end
 * This is an unordered list.
 * This is an unordered list.
 
-An a two-level ordered list:
+A two-level ordered list:
 
 1.  This is an ordered list.
 2.  This is an ordered list.
     * Unordered sub-list.
     * Unordered sub-list. 
-12. Actual numbers don't matter, just that it's a numbet or not.
+12. The list marker must be a number; the rendered sequence is numbered automatically.
 4.  And another item.
 
     You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces.
 
     # And a header
     
-Unordered list can use asterisks:
+Unordered lists can use asterisks, hyphens or plus signs:
 
 * Like this
 - Or minuses
@@ -172,20 +173,20 @@ And a task list:
 * This is an unordered list.
 * This is an unordered list.
 
-An a two-level ordered list:
+A two-level ordered list:
 
 1.  This is an ordered list.
 2.  This is an ordered list.
     * Unordered sub-list.
     * Unordered sub-list. 
-12. Actual numbers don't matter, just that it's a numbet or not.
+12. The list marker must be a number; the rendered sequence is numbered automatically.
 4.  And another item.
 
     You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces.
 
     # And a header
-    
-Unordered list can use asterisks:
+
+Unordered lists can use asterisks, hyphens or plus signs:
 
 * Like this
 - Or minuses
@@ -215,7 +216,8 @@ To quickly turn a URL or email address into a link, enclose it in angle brackets
 
 ```
 
-To quickly turn a URL or email address into a link, enclose it in angle brackets.
+To quickly turn a URL or email address into a link, enclose it in angle
+brackets.
 
 <https://www.markdownguide.org>
 <fake@example.com>
@@ -268,7 +270,6 @@ A table
 | 3      | Shayna   | 18      | F          |
 | 4      | Fechin   | 18      | M          |
 
-
 ```markdown
 There's a horizontal rule below this.
 
@@ -297,7 +298,6 @@ Another
 ![Branching](https://guides.github.com/activities/hello-world/branching.png)
 ```
 
-
 **Small image**
 
 ![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
@@ -305,7 +305,6 @@ Another
 **Large image**
 
 ![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
 
 ### Definition lists can be used with HTML syntax.
 
@@ -322,7 +321,6 @@ Another
 </dl>
 ```
 
-
 <dl>
 <dt>Name</dt>
 <dd>Godzilla</dd>
@@ -334,10 +332,6 @@ Another
 <dd>Green</dd>
 </dl>
 
-
-
 ```
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 ```
-
-

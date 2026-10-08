@@ -6,4 +6,5 @@ permalink: /cheatsheets
 show_breadcrumb: true
 ---
 
-If it is first time using `markdown` and `jekyll`, you may find this pages useful.
+If you are new to Markdown and Jekyll, these cheatsheets introduce the syntax
+used to write your pages.
