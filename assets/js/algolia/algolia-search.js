@@ -122,6 +122,10 @@ search.addWidgets([
     },
   }),
   
+  instantsearch.widgets.poweredBy({
+    container: '#powered-by',
+  }),
+  
   
   instantsearch.widgets.hits({
     container: '#hits',

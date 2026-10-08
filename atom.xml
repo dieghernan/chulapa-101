@@ -3,7 +3,7 @@
 	<generator uri="https://dieghernan.github.io/chulapa" version="1.0.0">Chulapa</generator>
 	<link href="https://dieghernan.github.io/chulapa-101/atom.xml" rel="self" type="application/atom+xml" />
 	<link href="https://dieghernan.github.io/chulapa-101" rel="alternate" type="text/html" />
-	<updated>2026-10-08T19:55:20+00:00</updated>
+	<updated>2026-10-08T20:10:48+00:00</updated>
 	<id>https://dieghernan.github.io/chulapa-101/atom.xml</id>
 	<title>My journal | A personal journal</title>
 	<subtitle>A personal journal</subtitle>
@@ -13,7 +13,7 @@
 	</author>
 	<rights>(c) 2026, Your name</rights>
 	
-	<logo>https://github.com/dieghernan.png</logo><entry>
+	<logo></logo><entry>
 		<title type="html">A small project for the weekend</title>
 		<link href="https://dieghernan.github.io/chulapa-101/blog/2026/05/18/small-project/" rel="alternate" type="text/html" title="A small project for the weekend"/>
 		<published>2026-05-18T00:00:00+00:00</published>
@@ -41,7 +41,7 @@ I want to try. One page per idea, with room for a sketch and the next step.&lt;/
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://publicdomainreview.org/&quot;&gt;The Public Domain Review&lt;/a&gt; for unexpected stories and visual inspiration.&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.gutenberg.org/&quot;&gt;Project Gutenberg&lt;/a&gt; for books to browse and return to.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://dieghernan.github.io/chulapa/&quot;&gt;Chulapa&lt;/a&gt; for the theme behind this journal.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dieghernan.github.io/chulapa/&quot;&gt;&lt;span class=&quot;chulapa&quot;&gt;Chulapa&lt;/span&gt;&lt;/a&gt; for the theme behind this journal.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;the-next-step&quot;&gt;The next step&lt;/h2&gt;

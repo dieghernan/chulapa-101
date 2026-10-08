@@ -7,14 +7,14 @@
 		<description>Stories, places and everyday discoveries</description>
 		<language>en-US</language>
 		<copyright>(c) 2026, Your name</copyright>	
-		<pubDate>Thu, 08 Oct 2026 19:55:20 +0000</pubDate>
-		<lastBuildDate>Thu, 08 Oct 2026 19:55:20 +0000</lastBuildDate>
+		<pubDate>Thu, 08 Oct 2026 20:10:48 +0000</pubDate>
+		<lastBuildDate>Thu, 08 Oct 2026 20:10:48 +0000</lastBuildDate>
 		<category>blog</category>
 		<ttl>60</ttl>
 		<atom:link href="https://dieghernan.github.io/chulapa-101/rss.xml" rel="self" type="application/rss+xml" />
 		<image>
 			<title>My journal | A personal journal</title>
-			<url>https://github.com/dieghernan.png</url>
+			<url></url>
 			<link>https://dieghernan.github.io/chulapa-101</link>
 			<description>Stories, places and everyday discoveries</description>
 		</image><item>
@@ -41,7 +41,7 @@ I want to try. One page per idea, with room for a sketch and the next step.</p>
 <ul>
   <li><a href="https://publicdomainreview.org/">The Public Domain Review</a> for unexpected stories and visual inspiration.</li>
   <li><a href="https://www.gutenberg.org/">Project Gutenberg</a> for books to browse and return to.</li>
-  <li><a href="https://dieghernan.github.io/chulapa/">Chulapa</a> for the theme behind this journal.</li>
+  <li><a href="https://dieghernan.github.io/chulapa/"><span class="chulapa">Chulapa</span></a> for the theme behind this journal.</li>
 </ul>
 
 <h2 id="the-next-step">The next step</h2>
