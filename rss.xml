@@ -7,8 +7,8 @@
 		<description>Stories, places and everyday discoveries</description>
 		<language>en-US</language>
 		<copyright>(c) 2026, Your name</copyright>	
-		<pubDate>Thu, 08 Oct 2026 19:36:22 +0000</pubDate>
-		<lastBuildDate>Thu, 08 Oct 2026 19:36:22 +0000</lastBuildDate>
+		<pubDate>Thu, 08 Oct 2026 19:49:17 +0000</pubDate>
+		<lastBuildDate>Thu, 08 Oct 2026 19:49:17 +0000</lastBuildDate>
 		<category>blog</category>
 		<ttl>60</ttl>
 		<atom:link href="https://dieghernan.github.io/chulapa-101/rss.xml" rel="self" type="application/rss+xml" />
@@ -18,6 +18,78 @@
 			<link>https://dieghernan.github.io/chulapa-101</link>
 			<description>Stories, places and everyday discoveries</description>
 		</image><item>
+			<title>A small project for the weekend</title>
+			<description>
+				<![CDATA[	
+ 				
+    		<p>1 min.</p>
+				<div><p>This weekend’s project is deliberately small: make a notebook for the things
+I want to try. One page per idea, with room for a sketch and the next step.</p>
+
+<h2 id="three-things-to-start-with">Three things to start with</h2>
+
+<ol>
+  <li>A place to collect ideas before they get lost.</li>
+  <li>A short list of materials I already have.</li>
+  <li>One action I can finish in an afternoon.</li>
+</ol>
+
+<p>The notebook does not need to be beautiful. It needs to be easy to open.</p>
+
+<h2 id="a-few-useful-places">A few useful places</h2>
+
+<ul>
+  <li><a href="https://publicdomainreview.org/">The Public Domain Review</a> for unexpected stories and visual inspiration.</li>
+  <li><a href="https://www.gutenberg.org/">Project Gutenberg</a> for books to browse and return to.</li>
+  <li><a href="https://dieghernan.github.io/chulapa/">Chulapa</a> for the theme behind this journal.</li>
+</ul>
+
+<h2 id="the-next-step">The next step</h2>
+
+<p>I will choose one idea and write down what happened, including the parts that
+did not work. A small finished experiment teaches me more than a perfect plan.</p>
+</div>
+				]]>
+			</description>
+			<link>https://dieghernan.github.io/chulapa-101/blog/2026/05/18/small-project/</link>
+			<category>posts</category>
+		    <category>journal</category><category>projects</category><guid isPermaLink="true">https://dieghernan.github.io/chulapa-101/blog/2026/05/18/small-project/</guid>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+		</item><item>
+			<title>An evening walk through Madrid</title>
+			<description>
+				<![CDATA[	
+ 				
+    		<p>1 min.</p>
+				<div><p>A familiar street feels different after dark. The traffic keeps moving, but
+lit windows and reflections turn an ordinary walk into something worth slowing
+down for.</p>
+
+<h2 id="looking-up">Looking up</h2>
+
+<p>At Plaza de Cibeles, I stopped to look at the towers instead of the crossing
+signal. The building glowed against the sky, and for a moment the city seemed
+to have a completely different rhythm.</p>
+
+<figure>
+<img src="/chulapa-101/assets/img/madrid-at-night.jpg" alt="Palacio de Cibeles illuminated against a dark blue sky, with a fountain and cars in the foreground" width="640" height="959" loading="lazy" class="img-fluid" />
+<figcaption class="mt-2"><a href="https://unsplash.com/photos/CRMjqDZwxS4">Palacio de Cibeles after dark. Photograph by Quique Olivar on Unsplash.</a></figcaption>
+</figure>
+
+<h2 id="a-small-habit">A small habit</h2>
+
+<p>I want to take more walks without a destination. Just one neighborhood, enough
+time to look up and no pressure to turn every outing into a plan.</p>
+
+<p>The best part is coming home with something I would otherwise have missed.</p>
+</div>
+				]]>
+			</description>
+			<link>https://dieghernan.github.io/chulapa-101/blog/2026/04/12/evening-walk/</link>
+			<category>posts</category>
+		    <category>journal</category><category>walks</category><guid isPermaLink="true">https://dieghernan.github.io/chulapa-101/blog/2026/04/12/evening-walk/</guid>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+		</item><item>
 			<title>A first story</title>
 			<description>
 				<![CDATA[	
@@ -28,14 +100,26 @@ notice the world around you and share what you find.</p>
 
 <h2 id="a-place-to-begin">A place to begin</h2>
 
-<p>Start with a place you visited, something you learned or a moment you want
-to remember. Add your own words and photographs to make this journal yours.</p>
+<p>I used to wait until I had something big to write about. A finished project,
+a long trip or an idea polished enough to explain. That left a lot of ordinary
+days unrecorded.</p>
+
+<p>This time, I am starting with the small things: a good walk, a paragraph from a
+book and the first rough sketch of a project. They count too.</p>
+
+<h2 id="keeping-it-simple">Keeping it simple</h2>
+
+<p>The plan is to write a little, often. Some posts will be stories; others will
+be a photograph or a short list. Over time, I hope they become a useful record
+of what caught my attention.</p>
+
+<p>If you are new here, <a href="/chulapa-101/about/">read a little about this journal</a>.</p>
 </div>
 				]]>
 			</description>
 			<link>https://dieghernan.github.io/chulapa-101/blog/2026/01/01/first-post/</link>
 			<category>posts</category>
-		    <guid isPermaLink="true">https://dieghernan.github.io/chulapa-101/blog/2026/01/01/first-post/</guid>
+		    <category>beginnings</category><category>journal</category><guid isPermaLink="true">https://dieghernan.github.io/chulapa-101/blog/2026/01/01/first-post/</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
 		</item></channel>
 </rss>
