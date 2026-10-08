@@ -1,81 +1,60 @@
 # Chulapa 101
 
-Create a site with the [Chulapa Jekyll theme](https://github.com/dieghernan/chulapa) using [this template](https://github.com/dieghernan/chulapa-101/generate).
+A ready-to-use personal blog based on [Chulapa's minimal blog example](https://github.com/dieghernan/chulapa/tree/main/examples/personal-blog). Its home page lists recent posts. It includes an about page, search and RSS, using the predefined Gitdev skin without color or CSS overrides.
 
-## Getting started
+[See the live site](https://dieghernan.github.io/chulapa-101/).
 
-1. Create your repository from the template.
-2. Edit `_config.yml`: set your title, description, author and repository.
-3. Set `url` to your site origin and `baseurl` to `/repository` for a project site or `""` for a root site. The Pages workflow sets the deployment base path automatically.
-4. Replace the sample posts, pages, images and navigation links.
-5. Enable GitHub Pages with **GitHub Actions** as its source.
+## Create and publish your site
 
-## Run locally
+You can do everything on GitHub. No installation or terminal is needed.
 
-Install Ruby and Bundler, then run these commands from the repository directory:
+1. Click [Use this template](https://github.com/dieghernan/chulapa-101/generate) and create your repository.
+2. In your new repository, open **Settings > Pages** and choose **GitHub Actions** as the source.
+3. Open `_config.yml`, click the pencil icon and change the title, description and author name. Set `repository` to `YOUR-USERNAME/YOUR-REPOSITORY` and `url` to `https://YOUR-USERNAME.github.io`. Commit the changes to your default branch.
+
+The **Actions** tab shows the deployment progress. When it finishes, **Settings > Pages** shows your website address. Future changes to `main` or `master` publish automatically. You do not need to configure a token. The workflow sets your site's base path automatically.
+
+## Add your content
+
+| What to change | File or folder |
+| --- | --- |
+| Site title, description and your name | `_config.yml` |
+| Home page heading and introduction | `index.md` |
+| About page | `_pages/about.md` |
+| Blog posts | `_posts/` |
+| Images | Create an `assets/img/` folder |
+
+For a new post, create a file such as `_posts/2026-01-01-hello.md`. Start it with:
+
+```markdown
+---
+title: Hello
+---
+
+This is my first post.
+```
+
+Use the publication date in the filename. Posts with a future date remain unpublished until a build runs on or after that date. You can edit or delete the sample posts through GitHub's file editor.
+
+## Choose a skin
+
+Change `skin: gitdev` under `chulapa-skin` in `_config.yml` to another [predefined skin](https://dieghernan.github.io/chulapa/skins). No CSS changes are required.
+
+See the [Chulapa documentation](https://dieghernan.github.io/chulapa/docs) for additional features and settings. This starter keeps one sample post and three pages so you can begin with a small site.
+
+## Optional local preview
+
+Local preview is for people who want to edit on their computer. Install Ruby and Bundler, then run these commands from the repository folder:
 
 ```sh
 bundle install
 bundle exec jekyll serve --host localhost --baseurl ""
 ```
 
-Open <http://localhost:4000>. Restart Jekyll after editing `_config.yml`.
-The Pages workflow uses Ruby 3.4 and this template uses Jekyll 4.4.
+Open <http://localhost:4000>. Restart Jekyll after changing `_config.yml`. The deployment workflow uses Ruby 3.4 and the template uses Jekyll 4.4.
 
-## Configuration
+## How deployment works
 
-[`_config.yml`](_config.yml) follows the current Chulapa configuration
-structure:
+The original Pages workflow builds the blog with Jekyll and supplies its base path automatically. You can also run it manually from the Actions tab. The existing branch publishing, profiling and cache cleanup workflows are preserved. There are no profile selectors or additional build scripts.
 
-- Site settings, social locales, author and optional JSON-LD publisher.
-- Font Awesome, analytics, search and comment providers.
-- Navigation, footer, fonts, skins and syntax highlighting.
-- Pagination, collections, front matter defaults and Jekyll settings.
-
-Blank settings use theme defaults where available. Replace the sample content
-and identity settings before publishing. Image metadata must describe the actual
-image.
-
-The template uses Fuse.js search, four posts per blog page and a Markdown
-cheatsheet collection. Autotheming is enabled with `lightskyblue` as the primary
-color.
-
-## Page options and examples
-
-[`_pages/theme-options.md`](_pages/theme-options.md) demonstrates options
-available in Chulapa 2.1.0: independent `seo_title` and `og_title`, a shared
-`description`, social image metadata, page language, Open Graph locales,
-`og_type: article`, `schema_image` and video metadata.
-
-Use `canonical_url` only when a page should identify a different canonical URL;
-ordinary pages use their generated URL. Set `robots: "noindex, follow"` for
-pages such as search results, as shown in
-[`_pages/search.md`](_pages/search.md). Robots metadata does not remove a page
-from the sitemap; use `sitemap: false` when needed.
-
-[`_pages/minimal-header.md`](_pages/minimal-header.md) demonstrates `layout:
-minimal` with `show_header: true`.
-
-See the complete [page and snippet reference](https://dieghernan.github.io/chulapa/docs/04-layouts), [site configuration](https://dieghernan.github.io/chulapa/docs/02-config) and [theming guide](https://dieghernan.github.io/chulapa/docs/03-theming).
-
-## Included content
-
-- Sample posts, a paginated blog and year, category and tag archives.
-- Markdown and kramdown cheatsheets.
-- A Bootstrap component demo and a 404 page.
-- Fuse.js search, an Atom feed, an RSS feed and a generated sitemap.
-- Custom include hooks in [`_includes/custom/`](_includes/custom/) and CSS in [`assets/css/`](assets/css/).
-- Optional Algolia indexing configuration in [`algolia-search.yml`](algolia-search.yml).
-
-## Theme updates
-
-```yaml
-remote_theme: dieghernan/chulapa
-```
-
-The remote theme follows Chulapa's default branch without pinning a release. A
-fresh build downloads the theme from that branch, so rebuilding can pick up
-upstream changes even without editing this repository. The examples have been
-updated for Chulapa 2.1.0.
-
-Theme updates do not replace this repository's configuration, content or local overrides. Review the [Chulapa changelog](https://github.com/dieghernan/chulapa/blob/main/CHANGELOG.md) when updating. `bundle update` updates Ruby dependencies, not the remote theme version.
+The remote theme follows Chulapa's default branch. A fresh build can pick up theme updates. Your content and configuration remain in this repository. To pin a release, append `@TAG` to `remote_theme` in `_config.yml`.
