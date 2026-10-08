@@ -23,6 +23,10 @@ navbar:
   nav:
     - title: About
       url: /about/
+    - title: Archive
+      url: /archive/
+    - title: Tags
+      url: /tags/
 footer:
   links:
     - label: RSS
@@ -48,6 +52,7 @@ defaults:
       layout: default
       header_type: base
       include_on_search: false
+      cloudtag_url: /tags/
   - scope:
       path: _pages
     values:
@@ -61,6 +66,7 @@ defaults:
       include_on_feed: true
       show_date: true
       show_author: true
+      show_tags: true
 
 include:
   - _pages
