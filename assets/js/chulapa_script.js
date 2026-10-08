@@ -1,3 +1,53 @@
+// Floating navigation uses a keyboard-operable button; the lateral TOC is independent.
+var navigationButton = document.getElementById("navi-toggle");
+var navigationMenu = document.getElementById("navi-menu");
+if (navigationButton && navigationMenu) {
+  function setFloatingNavigation(open, returnFocus) {
+    navigationButton.setAttribute("aria-expanded", String(open));
+    navigationMenu.setAttribute("aria-hidden", String(!open));
+    navigationMenu.inert = !open;
+    if (open) {
+      navigationMenu.querySelector("a, button").focus();
+    } else if (returnFocus) {
+      navigationButton.focus();
+    }
+  }
+  navigationButton.addEventListener("click", function () {
+    setFloatingNavigation(navigationButton.getAttribute("aria-expanded") !== "true", true);
+  });
+  navigationMenu.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      event.preventDefault();
+      event.stopPropagation();
+      setFloatingNavigation(false, true);
+    }
+  });
+  navigationButton.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      setFloatingNavigation(false, true);
+    }
+  });
+  navigationMenu.addEventListener("click", function (event) {
+    var link = event.target.closest("a");
+    if (link && !link.hasAttribute("data-toggle")) {
+      setFloatingNavigation(false, true);
+    }
+  });
+  navigationMenu.addEventListener("focusout", function () {
+    setTimeout(function () {
+      if (!navigationMenu.contains(document.activeElement) &&
+          document.activeElement !== navigationButton) {
+        setFloatingNavigation(false, false);
+      }
+    }, 0);
+  });
+  window.addEventListener("resize", function () {
+    if (navigationButton.getClientRects().length === 0) {
+      setFloatingNavigation(false, false);
+    }
+  });
+}
+
 var sT = document.getElementById("sidetoc");
 var btn = document.getElementById("demo");
 var body = document.getElementById("body");
@@ -71,9 +121,14 @@ els.forEach(function (currentValue, currentIndex) {
   preBlock = currentValue;
   i = currentIndex;
   // Select first child
-  codeBlock = preBlock.firstChild;
+  codeBlock = preBlock.querySelector("code");
+  if (body && body.getAttribute("data-mermaid") === "true" &&
+      (preBlock.classList.contains("mermaid") || preBlock.closest(".language-mermaid") ||
+       (codeBlock && codeBlock.classList.contains("language-mermaid")))) {
+    return;
+  }
   // If first child is code
-  if (codeBlock.tagName.toLowerCase() == "code") {
+  if (codeBlock) {
     // Add br is no native
     hashigh = preBlock.classList.contains("highlight");
     if (hashigh === false){
@@ -136,40 +191,23 @@ async function setTooltip(thisbtn, tooltip, style) {
 }
 
 function ch_copy_cliboard(i) {
-  return function () {
-    // Select code content and strip HTML
-    let thisCodeBlock = document.getElementById("clipboard_code" + i)
-      .innerHTML;
-    codeBlockStripped = stripHtml(thisCodeBlock);
-
-    // Reset clipboard
-    navigator.clipboard.writeText("");
-
-    thiscopybtn = document.getElementById("clipboard_btn" + i);
-    btnTrigger = $(thiscopybtn);
-
-    // Set initial values
-
-    style = "text-success";
-    msg = "Copied on the clipboard:\n" + codeBlockStripped;
-    tooltip = "Copied!";
+  return async function () {
+    const code = document.getElementById("clipboard_code" + i).textContent;
+    const button = document.getElementById("clipboard_btn" + i);
+    const trigger = $(button);
+    let style = "text-success";
+    let tooltip = "Copied!";
+    button.disabled = true;
     try {
-      navigator.clipboard.writeText(codeBlockStripped);
+      await navigator.clipboard.writeText(code);
     } catch {
-      // Modify on error
       style = "text-danger";
-      tooltip = "Error!";
-      msg = "Error when copying the code";
+      tooltip = "Unable to copy code";
+    } finally {
+      button.disabled = false;
     }
-    setTooltip(thiscopybtn, tooltip, style);
-    showTooltip(btnTrigger, tooltip);
-    hideTooltip(btnTrigger);
-    console.log(msg);
-  }
-}
-// stripHtml safely
-function stripHtml(html) {
-  let tmp = document.createElement("DIV");
-  tmp.innerHTML = html;
-  return tmp.textContent || tmp.innerText || "";
+    setTooltip(button, tooltip, style);
+    showTooltip(trigger, tooltip);
+    hideTooltip(trigger);
+  };
 }
