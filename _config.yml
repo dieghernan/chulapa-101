@@ -66,6 +66,11 @@ fa_v4_support: #Bool Add FontAwesome 4 support
 # Leave unused IDs empty. Setting both loads both snippets.
 gtag_id                 :
 analytics_id            :
+# Optional GoatCounter public HTTPS /count endpoint; production builds only.
+# Requires theme main after v2.1.0; absent from the v2.1.0 gem or pin.
+# Hosted: https://YOUR-CODE.goatcounter.com/count; self-hosted URLs work too.
+# Independent of Google Analytics; leave empty to disable.
+goatcounter             :
 
 # A.4. Search engines
 # Create a page with layout: search and a permalink matching landing_page.
@@ -159,7 +164,7 @@ footer:
     - label : RSS # Label
       icon  : fa fa-rss # Font Awesome icon code.
       url   : /atom.xml # A link or email: https://twitter.com/jack, mail@example.com
-  copyright: # default is Â© <year> <name>
+  copyright: # default is © <year> <name>
 
 # C. Theming Chulapa
 # Full reference: docs/03-theming.
