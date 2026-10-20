@@ -37,6 +37,7 @@ twitter_site            :     #Avoid @
 # Site author
 author:
   name                  : Your name # Name Surname Company
+  url                   :     # Optional author profile URL or site-relative path, e.g. /about/.
   avatar                :     # Try a square file. Info: Your github avatar on https://github.com/[USERNAME].png
   location              :     # New York, USA
   links: [] # Uncomment a complete entry below to display an author link.
@@ -175,8 +176,15 @@ googlefonts:
 
 # C.2. Skin, syntax highlighting and colors
 chulapa-skin:
-  highlight     :  # default["default"]
-  skin         : gitdev # Optional predefined skins
+  highlight     : stackoverflow.light # default["default"]
+  skin          : butterfly # Optional predefined skins
+  autothemer    :  # Bool: Use autotheming
+  vars          :
+    primary     :   #default ["#007bff"] - Bootstrap blue
+
+chulapa-skin-dark:
+  highlight     : stackoverflow.dark # default["default"]
+  skin          : butterfly-dim # Optional predefined skins
   autothemer    :  # Bool: Use autotheming
   vars          :
     primary     :   #default ["#007bff"] - Bootstrap blue
