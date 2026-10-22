@@ -1,6 +1,6 @@
 # <span class="chulapa">Chulapa</span> 101
 
-A ready-to-use personal blog with a small content structure inspired by [Minimal Mistakes' GitHub Pages starter](https://github.com/mmistakes/mm-github-pages-starter), adapted to [<span class="chulapa">Chulapa</span>](https://github.com/dieghernan/chulapa). It includes three sample posts, a paginated home page, About, year, category and tag archives, Fuse.js search and RSS. It uses the predefined Gitdev skin without color or CSS overrides.
+A ready-to-use personal blog with a small content structure inspired by [Minimal Mistakes' GitHub Pages starter](https://github.com/mmistakes/mm-github-pages-starter), adapted to [<span class="chulapa">Chulapa</span>](https://github.com/dieghernan/chulapa). It includes three sample posts, a paginated home page, About, year, category and tag archives, Fuse.js search and RSS. It uses the predefined Butterfly light skin and Butterfly Dim dark skin, with the optional light/dark/auto selector and no color or CSS overrides.
 
 [See the live site](https://dieghernan.github.io/chulapa-101/).
 
@@ -111,6 +111,6 @@ Open <http://localhost:4000>. Restart Jekyll after changing `_config.yml`. The d
 
 ## How deployment works
 
-The original Pages workflow builds the blog with Jekyll and supplies its base path automatically. You can also run it manually from the Actions tab. The existing branch publishing, profiling and cache cleanup workflows are preserved. There are no profile selectors or additional build scripts.
+The original Pages workflow builds the blog with Jekyll and supplies its base path automatically. You can also run it manually from the Actions tab. The same workflow also copies the generated site to the `gh-pages` branch. A separate cache cleanup workflow is available. There are no profile selectors or additional build scripts.
 
 The remote theme follows <span class="chulapa">Chulapa</span>'s default branch. A fresh build can pick up theme updates. Your content and configuration remain in this repository. To pin a release, append `@TAG` to `remote_theme` in `_config.yml`.
