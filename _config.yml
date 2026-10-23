@@ -68,7 +68,7 @@ fa_v4_support: #Bool Add FontAwesome 4 support
 gtag_id                 :
 analytics_id            :
 # Optional GoatCounter public HTTPS /count endpoint; production builds only.
-# Requires theme main after v2.1.0; absent from the v2.1.0 gem or pin.
+# Available since Chulapa 2.2.0.
 # Hosted: https://YOUR-CODE.goatcounter.com/count; self-hosted URLs work too.
 # Independent of Google Analytics; leave empty to disable.
 goatcounter             :

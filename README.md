@@ -58,7 +58,7 @@ Gemfile              Local build dependencies
 
 ## Choose a skin
 
-Change `skin: gitdev` under `chulapa-skin` in `_config.yml` to another [predefined skin](https://dieghernan.github.io/chulapa/skins). No CSS changes are required.
+Change `skin: butterfly` under `chulapa-skin` in `_config.yml` to another [predefined skin](https://dieghernan.github.io/chulapa/skins). No CSS changes are required.
 
 The configuration follows <span class="chulapa">Chulapa</span>'s full sample, with the same sections, option names and explanatory comments. Unused options stay empty so you can find them when needed. Start with your site details in section A; the blog, navigation, Fuse.js search, pagination and skin are already configured. Do not replace the file with the theme's sample: that sample also configures <span class="chulapa">Chulapa</span>'s own documentation collections.
 
