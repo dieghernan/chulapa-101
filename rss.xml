@@ -6,9 +6,9 @@
 		<link>https://dieghernan.github.io/chulapa-101</link>
 		<description>Stories, places and everyday discoveries</description>
 		<language>en-US</language>
-		<copyright>(c) 2026, Your name</copyright>	
-		<pubDate>Tue, 03 Nov 2026 12:11:49 +0000</pubDate>
-		<lastBuildDate>Tue, 03 Nov 2026 12:11:49 +0000</lastBuildDate>
+		<copyright>(c) 2026, Your name</copyright>
+		<pubDate>Tue, 03 Nov 2026 16:36:43 +0000</pubDate>
+		<lastBuildDate>Tue, 03 Nov 2026 16:36:43 +0000</lastBuildDate>
 		<category>blog</category>
 		<ttl>60</ttl>
 		<atom:link href="https://dieghernan.github.io/chulapa-101/rss.xml" rel="self" type="application/rss+xml" />
@@ -17,7 +17,9 @@
 			<url></url>
 			<link>https://dieghernan.github.io/chulapa-101</link>
 			<description>Stories, places and everyday discoveries</description>
-		</image><item>
+		</image>
+		<item>
+			<dc:creator>Your name</dc:creator>
 			<title>A small project for the weekend</title>
 			<description>
 				<![CDATA[	
@@ -55,7 +57,9 @@ did not work. A small finished experiment teaches me more than a perfect plan.</
 			<category>posts</category>
 		    <category>journal</category><category>projects</category><guid isPermaLink="true">https://dieghernan.github.io/chulapa-101/blog/2026/05/18/small-project/</guid>
       <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-		</item><item>
+		</item>
+		<item>
+			<dc:creator>Your name</dc:creator>
 			<title>An evening walk through Madrid</title>
 			<description>
 				<![CDATA[	
@@ -89,7 +93,9 @@ time to look up and no pressure to turn every outing into a plan.</p>
 			<category>posts</category>
 		    <category>journal</category><category>walks</category><guid isPermaLink="true">https://dieghernan.github.io/chulapa-101/blog/2026/04/12/evening-walk/</guid>
       <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-		</item><item>
+		</item>
+		<item>
+			<dc:creator>Your name</dc:creator>
 			<title>A first story</title>
 			<description>
 				<![CDATA[	
