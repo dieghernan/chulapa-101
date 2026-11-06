@@ -83,11 +83,11 @@ goatcounter             :
 # - fusejs: https://fusejs.io/
 search:
   provider              : fusejs # Enable search: lunr, algolia, google, simplesearch or fusejs.
-  label                 :  #default ["Search"] Text on navbar when search is enabled
+  label                 : #default ["Search"] Text on navbar when search is enabled
   landing_page          : /search.html #default ["/search"] Link on navbar
-  maxwords              :  #default [30] lunr simplesearch, fusejs only - May slow down your site build
-  show_attrib           : false #default ["true"] Show attributions/logo on search engine
-  algolia_logo          :  true # Check your plan's attribution requirements before hiding the logo.
+  maxwords              : #default [30] lunr simplesearch, fusejs only - May slow down your site build
+  show_attrib           : #default ["true"] Show attributions/logo on search engine
+  algolia_logo          : true # Check your plan's attribution requirements before hiding the logo.
 
 google_cse_id: #Your cse id
 # Algolia indexing uses jekyll-algolia. Adapt these indexing options to your site.
