@@ -33,7 +33,8 @@ timezone                :     # e.g. Europe/Madrid. See https://jekyllrb.com/doc
 og_locale               :     # Optional language_TERRITORY for social metadata
 og_locale_alternate     : []  # Optional list of translated locales, e.g. [es_ES, fr_FR]
 og_image                :     #default[author.avatar (see below)] or [github-avatar]
-twitter_site            :     #Avoid @
+# og_image_alt: Describe the site-wide og_image (Chulapa v2.2.1 development).
+twitter_site            :     # Omit the @ prefix.
 # Site author
 author:
   name                  : Your name # Name Surname Company
@@ -61,7 +62,7 @@ publisher:
 fa_version: # Defaults to 7. Set to 6 or 5 to use an older version.
 fa_kit_code: # Your FontAwesome kit code. If not provided a free hosted version (slower) will be loaded:  https://fontawesome.com/
 fa_v4_support: #Bool Add FontAwesome 4 support
-# A.3. Google Analytics
+# A.3. Analytics
 # gtag_id: Google Analytics 4 measurement ID, e.g. G-XXXXXXXXXX.
 # analytics_id: legacy Universal Analytics ID; use gtag_id for new setups.
 # Leave unused IDs empty. Setting both loads both snippets.
@@ -146,6 +147,8 @@ navbar:
   nav:
   - title: About # Label shown in the navbar
     url: /about/
+  - title: Kitchen Sink
+    url: /kitchen-sink/
   - title: Archive
     url: /archive/
   - title: Tags
@@ -182,6 +185,7 @@ chulapa-skin:
   vars          :
     primary     :   #default ["#007bff"] - Bootstrap blue
 
+# Optional second skin (Chulapa v2.2.0+). Set its skin name to enable Light, Dark and Auto.
 chulapa-skin-dark:
   highlight     : stackoverflow.dark # default["default"]
   skin          : butterfly-dim # Optional predefined skins
@@ -209,9 +213,18 @@ collections: {} # Add named collections here when you need them.
 collections_dir     : "" # Empty means the site root.
 permalink           : /blog/:year/:month/:day/:title/
 
+# Optional series navigation (Chulapa v2.2.1 development).
+# Each member sets the series ID and order in its front matter.
+# See docs/04-layouts#series-navigation for optional part_label and index_label.
+series:
+  starter-tour:
+    label: Starter tour
+
 # D.3. Front matter defaults
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/
 # Theme page options: docs/04-layouts.
+# Tables of contents, citations and Google Scholar metadata are opt-in.
+# Set these options in a page's front matter or in defaults for a group of pages.
 defaults:
   -
     scope:

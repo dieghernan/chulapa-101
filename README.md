@@ -1,6 +1,6 @@
 # <span class="chulapa">Chulapa</span> 101
 
-A ready-to-use personal blog with a small content structure inspired by [Minimal Mistakes' GitHub Pages starter](https://github.com/mmistakes/mm-github-pages-starter), adapted to [<span class="chulapa">Chulapa</span>](https://github.com/dieghernan/chulapa). It includes three sample posts, a paginated home page, About, year, category and tag archives, Fuse.js search and RSS. It uses the predefined Butterfly light skin and Butterfly Dim dark skin, with the optional light/dark/auto selector and no color or CSS overrides.
+A ready-to-use personal blog with a small content structure inspired by [Minimal Mistakes' GitHub Pages starter](https://github.com/mmistakes/mm-github-pages-starter), adapted to [<span class="chulapa">Chulapa</span>](https://github.com/dieghernan/chulapa). It includes three sample posts, a paginated home page, About, year, category and tag archives, Fuse.js search, RSS and a Kitchen Sink component demo. It uses the predefined Butterfly light skin and Butterfly Dim dark skin, with the optional light/dark/auto selector and no color or CSS overrides.
 
 [See the live site](https://dieghernan.github.io/chulapa-101/).
 
@@ -21,6 +21,7 @@ The **Actions** tab shows the deployment progress. When it finishes, **Settings 
 | Site title, description and your name | `_config.yml` |
 | Home page heading and introduction | `index.html` |
 | About page | `_pages/about.md` |
+| Kitchen Sink demo | `_pages/kitchen-sink.md` |
 | Archive pages | `_pages/archive.md`, `_pages/categories.md` and `_pages/tags.md` |
 | Blog posts | `_posts/` |
 | Images | `assets/img/` |
@@ -40,13 +41,13 @@ Use the publication date in the filename. Posts with a future date remain unpubl
 
 Replace the sample text and the `hello@example.com` contact address on About before publishing your own content. The sample photograph is credited to Quique Olivar on Unsplash in its post. Replace it with your own image and update the alternative text to describe it.
 
-The archive pages use Chulapa's `archive`, `cloudcategory` and `cloudtag` layouts, limited to posts. Post categories and tags link to the corresponding topic. Fuse.js indexes posts and About; archive pages, the home page, search and 404 are excluded to avoid duplicate search results. New pages under `_pages/` are searchable unless their front matter sets `include_on_search: false`.
+The archive pages use Chulapa's `archive`, `cloudcategory` and `cloudtag` layouts, limited to posts. Post categories and tags link to the corresponding topic. Fuse.js indexes posts and About; archive pages, the home page, search and 404 are excluded to avoid duplicate search results. New pages under `_pages/` are searchable unless their front matter sets `include_on_search: false`. Kitchen Sink uses this setting to keep demo content out of the search results.
 
 The home page shows five posts per page. Change `paginate` in `_config.yml` to adjust this; keep the home page named `index.html` because Jekyll's pagination plugin requires it. Navigation, author details and footer links are configured in `_config.yml`. <span class="chulapa">Chulapa</span> supplies the layouts, includes and styles. Optional customization files are included, ready to edit when you need them.
 
 ```text
 _config.yml          Site settings and navigation
-_pages/              About, archives, search and 404
+_pages/              About, Kitchen Sink, archives, search and 404
 _posts/              Your blog posts
 _includes/custom/    Optional HTML and script hooks
 assets/img/          Your images
@@ -55,6 +56,12 @@ index.html           Paginated home page
 Gemfile              Local build dependencies
 .github/workflows/   Existing deployment workflows
 ```
+
+## Explore the Kitchen Sink
+
+Open [Kitchen Sink](https://dieghernan.github.io/chulapa-101/kitchen-sink/) from the menu to try callouts, keyboard-operated tabs, tables of contents, diagrams, equations, PhotoSwipe galleries, a carousel and video. The [page source](_pages/kitchen-sink.md) groups the examples by component so you can copy them into your own pages. Callouts, series navigation and citations are available in the v2.2.1 development version followed by this starter. The [layout reference](https://dieghernan.github.io/chulapa/docs/04-layouts) lists version requirements for individual features.
+
+About and Kitchen Sink form the **Starter tour**. Its display name lives under `series` in `_config.yml`. Each page sets the series ID and order in its front matter. To remove the demo, delete `_pages/kitchen-sink.md` and its entry under `navbar.nav`. You can also remove `series.starter-tour` from `_config.yml` and the series front matter and include from `_pages/about.md`.
 
 ## Choose a skin
 

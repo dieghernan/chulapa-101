@@ -4,6 +4,9 @@ title: About
 subtitle: A little background
 permalink: /about/
 description: A personal journal about city walks, everyday discoveries and small creative projects.
+series:
+  - id: starter-tour
+    order: 1
 ---
 
 ## Hello
@@ -26,3 +29,5 @@ Browse the [archive]({{ '/archive/' | relative_url }}) or explore the
 
 Have a favorite walk or a small project to share?
 [Send me a note](mailto:hello@example.com).
+
+{% include snippets/series-chapters.html %}
