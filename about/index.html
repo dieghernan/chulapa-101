@@ -14,7 +14,16 @@
         "@context": "https://schema.org",
         "@type": "WebPage",
         "@id": "https://dieghernan.github.io/chulapa-101/about/",
-        "isPartOf": {"@id": "https://dieghernan.github.io/chulapa-101/#website"},
+        "isPartOf": [
+          {
+            "@id": "https://dieghernan.github.io/chulapa-101/#website"
+          },
+          {
+            "@type": "CreativeWorkSeries",
+            "@id": "https://dieghernan.github.io/chulapa-101/#series-starter-tour",
+            "name": "Starter tour"
+          }
+        ],
         "breadcrumb": {"@id": "https://dieghernan.github.io/chulapa-101/about/#breadcrumb"},
         "name": "About",
         "description": "A personal journal about city walks, everyday discoveries and small creative projects.",
@@ -318,6 +327,8 @@
 				<ul class="navbar-nav ml-auto"><li class="nav-item">
 						<a class="nav-link  active font-weight-bold" href="https://dieghernan.github.io/chulapa-101/about/" aria-current="page">About<span class="sr-only">(current)</span></a>
 					</li><li class="nav-item">
+						<a class="nav-link " href="https://dieghernan.github.io/chulapa-101/kitchen-sink/">Kitchen Sink</a>
+					</li><li class="nav-item">
 						<a class="nav-link " href="https://dieghernan.github.io/chulapa-101/archive/">Archive</a>
 					</li><li class="nav-item">
 						<a class="nav-link " href="https://dieghernan.github.io/chulapa-101/tags/">Tags</a>
@@ -374,6 +385,24 @@ Browse the <a href="/chulapa-101/archive/">archive</a> or explore the
 <h2 id="say-hello">Say hello</h2>
 <p>Have a favorite walk or a small project to share?
 <a href="mailto:hello@example.com">Send me a note</a>.</p>
+<div class="chulapa-series-indices chulapa-series-columns-1 small mb-3">
+<div class="chulapa-series">
+<div class="font-weight-bold">
+ <div>Starter tour</div>
+ <div class="chulapa-series-position">Part 1 of 2</div>
+</div>
+<div class="chulapa-series-controls">
+ <progress class="chulapa-series-progress" value="1" max="2" aria-label="Starter tour progress, Part 1 of 2">1 of 2</progress>
+ <nav aria-label="Starter tour previous and next" class="d-flex flex-wrap align-items-center"><button type="button" class="btn btn-sm chulapa-series-link mr-1" disabled=""><i class="fa fa-chevron-left mr-1" aria-hidden="true"></i>Previous</button><a class="btn btn-sm chulapa-series-link" href="/chulapa-101/kitchen-sink/" title="Kitchen Sink">Next<i class="fa fa-chevron-right ml-1" aria-hidden="true"></i><span class="sr-only">: Kitchen Sink</span></a></nav>
+</div>
+<details class="chulapa-series-index mt-1">
+  <summary>Series index<span class="sr-only">: Starter tour</span></summary>
+ <nav aria-label="Starter tour">
+   <ol class="mb-0 pl-4"><li class="text-muted"><span aria-current="page" class="chulapa-series-item font-weight-bold">About <i class="fas fa-arrow-left" aria-hidden="true"></i></span></li><li><a class="chulapa-series-item" href="/chulapa-101/kitchen-sink/">Kitchen Sink</a></li></ol>
+ </nav>
+</details>
+</div>
+</div>
 </div></article>
 		</div>
 	</div>
