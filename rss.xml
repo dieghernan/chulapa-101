@@ -1,131 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
-	<channel>
-		<title>My journal | A personal journal</title>
-		<generator>(c) Chulapa Jekyll Theme RSS generator</generator>
-		<link>https://dieghernan.github.io/chulapa-101</link>
-		<description>Stories, places and everyday discoveries</description>
-		<language>en-US</language>
-		<copyright>(c) 2026, Your name</copyright>
-		<pubDate>Mon, 09 Nov 2026 15:57:17 +0000</pubDate>
-		<lastBuildDate>Mon, 09 Nov 2026 15:57:17 +0000</lastBuildDate>
-		<category>blog</category>
-		<ttl>60</ttl>
-		<atom:link href="https://dieghernan.github.io/chulapa-101/rss.xml" rel="self" type="application/rss+xml" />
-		<image>
-			<title>My journal | A personal journal</title>
-			<url></url>
-			<link>https://dieghernan.github.io/chulapa-101</link>
-			<description>Stories, places and everyday discoveries</description>
-		</image>
-		<item>
-			<dc:creator>Your name</dc:creator>
-			<title>A small project for the weekend</title>
-			<description>
-				<![CDATA[	
- 				
-    		<p>1 min.</p>
-				<div><p>This weekend’s project is deliberately small: make a notebook for the things
-I want to try. One page per idea, with room for a sketch and the next step.</p>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>My journal | A personal journal</title>
+    <generator>(c) Chulapa Jekyll Theme RSS generator</generator>
+    <link>https://dieghernan.github.io/chulapa-101</link>
+    <description>Stories, places and everyday discoveries</description>
+    <language>en-US</language>
+    <copyright>(c) 2026, Your name</copyright>
+    <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+    <lastBuildDate>Mon, 16 Nov 2026 21:49:30 +0000</lastBuildDate>
+    <category>blog</category>
+    <ttl>60</ttl>
+    <atom:link href="https://dieghernan.github.io/chulapa-101/rss.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <dc:creator>Your name</dc:creator>
+      <title>A small project for the weekend</title>
+      <description>&lt;p&gt;This weekend’s project is deliberately small: make a notebook for the things
+I want to try. One page per idea, with room for a sketch and the next step.&lt;/p&gt;</description>
+      <content:encoded>&lt;p&gt;1 min.&lt;/p&gt;
+      &lt;div&gt;&lt;p&gt;This weekend’s project is deliberately small: make a notebook for the things
+I want to try. One page per idea, with room for a sketch and the next step.&lt;/p&gt;
 
-<h2 id="three-things-to-start-with">Three things to start with</h2>
+&lt;h2 id=&quot;three-things-to-start-with&quot;&gt;Three things to start with&lt;/h2&gt;
 
-<ol>
-  <li>A place to collect ideas before they get lost.</li>
-  <li>A short list of materials I already have.</li>
-  <li>One action I can finish in an afternoon.</li>
-</ol>
+&lt;ol&gt;
+  &lt;li&gt;A place to collect ideas before they get lost.&lt;/li&gt;
+  &lt;li&gt;A short list of materials I already have.&lt;/li&gt;
+  &lt;li&gt;One action I can finish in an afternoon.&lt;/li&gt;
+&lt;/ol&gt;
 
-<p>The notebook does not need to be beautiful. It needs to be easy to open.</p>
+&lt;p&gt;The notebook does not need to be beautiful. It needs to be easy to open.&lt;/p&gt;
 
-<h2 id="a-few-useful-places">A few useful places</h2>
+&lt;h2 id=&quot;a-few-useful-places&quot;&gt;A few useful places&lt;/h2&gt;
 
-<ul>
-  <li><a href="https://publicdomainreview.org/">The Public Domain Review</a> for unexpected stories and visual inspiration.</li>
-  <li><a href="https://www.gutenberg.org/">Project Gutenberg</a> for books to browse and return to.</li>
-  <li><a href="https://dieghernan.github.io/chulapa/"><span class="chulapa">Chulapa</span></a> for the theme behind this journal.</li>
-</ul>
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://publicdomainreview.org/&quot;&gt;The Public Domain Review&lt;/a&gt; for unexpected stories and visual inspiration.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gutenberg.org/&quot;&gt;Project Gutenberg&lt;/a&gt; for books to browse and return to.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dieghernan.github.io/chulapa/&quot;&gt;&lt;span class=&quot;chulapa&quot;&gt;Chulapa&lt;/span&gt;&lt;/a&gt; for the theme behind this journal.&lt;/li&gt;
+&lt;/ul&gt;
 
-<h2 id="the-next-step">The next step</h2>
+&lt;h2 id=&quot;the-next-step&quot;&gt;The next step&lt;/h2&gt;
 
-<p>I will choose one idea and write down what happened, including the parts that
-did not work. A small finished experiment teaches me more than a perfect plan.</p>
-</div>
-				]]>
-			</description>
-			<link>https://dieghernan.github.io/chulapa-101/blog/2026/05/18/small-project/</link>
-			<category>posts</category>
-		    <category>journal</category><category>projects</category><guid isPermaLink="true">https://dieghernan.github.io/chulapa-101/blog/2026/05/18/small-project/</guid>
+&lt;p&gt;I will choose one idea and write down what happened, including the parts that
+did not work. A small finished experiment teaches me more than a perfect plan.&lt;/p&gt;
+&lt;/div&gt;</content:encoded>
+      <link>https://dieghernan.github.io/chulapa-101/blog/2026/05/18/small-project/</link>
+      <category>posts</category>
+      <category>journal</category>
+      <category>projects</category>
+      <guid isPermaLink="true">https://dieghernan.github.io/chulapa-101/blog/2026/05/18/small-project/</guid>
       <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-		</item>
-		<item>
-			<dc:creator>Your name</dc:creator>
-			<title>An evening walk through Madrid</title>
-			<description>
-				<![CDATA[	
- 				
-    		<p>1 min.</p>
-				<div><p>A familiar street feels different after dark. The traffic keeps moving, but
+      
+    </item>
+    <item>
+      <dc:creator>Your name</dc:creator>
+      <title>An evening walk through Madrid</title>
+      <description>&lt;p&gt;A familiar street feels different after dark. The traffic keeps moving, but
 lit windows and reflections turn an ordinary walk into something worth slowing
-down for.</p>
+down for.&lt;/p&gt;</description>
+      <content:encoded>&lt;p&gt;1 min.&lt;/p&gt;
+      &lt;div&gt;&lt;p&gt;A familiar street feels different after dark. The traffic keeps moving, but
+lit windows and reflections turn an ordinary walk into something worth slowing
+down for.&lt;/p&gt;
 
-<h2 id="looking-up">Looking up</h2>
+&lt;h2 id=&quot;looking-up&quot;&gt;Looking up&lt;/h2&gt;
 
-<p>At Plaza de Cibeles, I stopped to look at the towers instead of the crossing
+&lt;p&gt;At Plaza de Cibeles, I stopped to look at the towers instead of the crossing
 signal. The building glowed against the sky, and for a moment the city seemed
-to have a completely different rhythm.</p>
+to have a completely different rhythm.&lt;/p&gt;
 
-<figure>
-<img src="/chulapa-101/assets/img/madrid-at-night.jpg" alt="Palacio de Cibeles illuminated against a dark blue sky, with a fountain and cars in the foreground" width="640" height="959" loading="lazy" class="img-fluid" />
-<figcaption class="mt-2"><a href="https://unsplash.com/photos/CRMjqDZwxS4">Palacio de Cibeles after dark. Photograph by Quique Olivar on Unsplash.</a></figcaption>
-</figure>
+&lt;figure&gt;
+&lt;img src=&quot;/chulapa-101/assets/img/madrid-at-night.jpg&quot; alt=&quot;Palacio de Cibeles illuminated against a dark blue sky, with a fountain and cars in the foreground&quot; width=&quot;640&quot; height=&quot;959&quot; loading=&quot;lazy&quot; class=&quot;img-fluid&quot; /&gt;
+&lt;figcaption class=&quot;mt-2&quot;&gt;&lt;a href=&quot;https://unsplash.com/photos/CRMjqDZwxS4&quot;&gt;Palacio de Cibeles after dark. Photograph by Quique Olivar on Unsplash.&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
 
-<h2 id="a-small-habit">A small habit</h2>
+&lt;h2 id=&quot;a-small-habit&quot;&gt;A small habit&lt;/h2&gt;
 
-<p>I want to take more walks without a destination. Just one neighborhood, enough
-time to look up and no pressure to turn every outing into a plan.</p>
+&lt;p&gt;I want to take more walks without a destination. Just one neighborhood, enough
+time to look up and no pressure to turn every outing into a plan.&lt;/p&gt;
 
-<p>The best part is coming home with something I would otherwise have missed.</p>
-</div>
-				]]>
-			</description>
-			<link>https://dieghernan.github.io/chulapa-101/blog/2026/04/12/evening-walk/</link>
-			<category>posts</category>
-		    <category>journal</category><category>walks</category><guid isPermaLink="true">https://dieghernan.github.io/chulapa-101/blog/2026/04/12/evening-walk/</guid>
+&lt;p&gt;The best part is coming home with something I would otherwise have missed.&lt;/p&gt;
+&lt;/div&gt;</content:encoded>
+      <link>https://dieghernan.github.io/chulapa-101/blog/2026/04/12/evening-walk/</link>
+      <category>posts</category>
+      <category>journal</category>
+      <category>walks</category>
+      <guid isPermaLink="true">https://dieghernan.github.io/chulapa-101/blog/2026/04/12/evening-walk/</guid>
       <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-		</item>
-		<item>
-			<dc:creator>Your name</dc:creator>
-			<title>A first story</title>
-			<description>
-				<![CDATA[	
- 				
-    		<p>1 min.</p>
-				<div><p>Every journal begins with a first story. This is a small space to pause,
-notice the world around you and share what you find.</p>
+      
+    </item>
+    <item>
+      <dc:creator>Your name</dc:creator>
+      <title>A first story</title>
+      <description>&lt;p&gt;Every journal begins with a first story. This is a small space to pause,
+notice the world around you and share what you find.&lt;/p&gt;</description>
+      <content:encoded>&lt;p&gt;1 min.&lt;/p&gt;
+      &lt;div&gt;&lt;p&gt;Every journal begins with a first story. This is a small space to pause,
+notice the world around you and share what you find.&lt;/p&gt;
 
-<h2 id="a-place-to-begin">A place to begin</h2>
+&lt;h2 id=&quot;a-place-to-begin&quot;&gt;A place to begin&lt;/h2&gt;
 
-<p>I used to wait until I had something big to write about. A finished project,
+&lt;p&gt;I used to wait until I had something big to write about. A finished project,
 a long trip or an idea polished enough to explain. That left a lot of ordinary
-days unrecorded.</p>
+days unrecorded.&lt;/p&gt;
 
-<p>This time, I am starting with the small things: a good walk, a paragraph from a
-book and the first rough sketch of a project. They count too.</p>
+&lt;p&gt;This time, I am starting with the small things: a good walk, a paragraph from a
+book and the first rough sketch of a project. They count too.&lt;/p&gt;
 
-<h2 id="keeping-it-simple">Keeping it simple</h2>
+&lt;h2 id=&quot;keeping-it-simple&quot;&gt;Keeping it simple&lt;/h2&gt;
 
-<p>The plan is to write a little, often. Some posts will be stories; others will
+&lt;p&gt;The plan is to write a little, often. Some posts will be stories; others will
 be a photograph or a short list. Over time, I hope they become a useful record
-of what caught my attention.</p>
+of what caught my attention.&lt;/p&gt;
 
-<p>If you are new here, <a href="/chulapa-101/about/">read a little about this journal</a>.</p>
-</div>
-				]]>
-			</description>
-			<link>https://dieghernan.github.io/chulapa-101/blog/2026/01/01/first-post/</link>
-			<category>posts</category>
-		    <category>beginnings</category><category>journal</category><guid isPermaLink="true">https://dieghernan.github.io/chulapa-101/blog/2026/01/01/first-post/</guid>
+&lt;p&gt;If you are new here, &lt;a href=&quot;/chulapa-101/about/&quot;&gt;read a little about this journal&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;</content:encoded>
+      <link>https://dieghernan.github.io/chulapa-101/blog/2026/01/01/first-post/</link>
+      <category>posts</category>
+      <category>beginnings</category>
+      <category>journal</category>
+      <guid isPermaLink="true">https://dieghernan.github.io/chulapa-101/blog/2026/01/01/first-post/</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-		</item></channel>
+      
+    </item>
+  </channel>
 </rss>

@@ -1,30 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" >
-	<generator uri="https://dieghernan.github.io/chulapa" version="1.0.0">Chulapa</generator>
-	<link href="https://dieghernan.github.io/chulapa-101/atom.xml" rel="self" type="application/atom+xml" />
-	<link href="https://dieghernan.github.io/chulapa-101" rel="alternate" type="text/html" />
-	<updated>2026-11-09T15:57:17+00:00</updated>
-	<id>https://dieghernan.github.io/chulapa-101/atom.xml</id>
-	<title>My journal | A personal journal</title>
-	<subtitle>A personal journal</subtitle>
-	
-	<author>
-		<name>Your name</name>
-		
-	</author>
-	<rights>(c) 2026, Your name</rights>
-	
-	<logo></logo><entry>
-		<title type="html">A small project for the weekend</title>
-		<link href="https://dieghernan.github.io/chulapa-101/blog/2026/05/18/small-project/" rel="alternate" type="text/html" title="A small project for the weekend"/>
-		<published>2026-05-18T00:00:00+00:00</published>
-		<updated>2026-05-18T00:00:00+00:00</updated>
-		<id>https://dieghernan.github.io/chulapa-101/blog/2026/05/18/small-project/</id>
-		<content type="html" xml:base="https://dieghernan.github.io/chulapa-101/blog/2026/05/18/small-project/">
-		
-  		
-	&lt;p&gt;1 min.&lt;/p&gt;
-			&lt;p&gt;This weekend’s project is deliberately small: make a notebook for the things
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
+  <generator uri="https://dieghernan.github.io/chulapa">Chulapa</generator>
+  <link href="https://dieghernan.github.io/chulapa-101/atom.xml" rel="self" type="application/atom+xml" />
+  <link href="https://dieghernan.github.io/chulapa-101" rel="alternate" type="text/html" />
+  <updated>2026-05-18T00:00:00+00:00</updated>
+  <id>https://dieghernan.github.io/chulapa-101/atom.xml</id>
+  <title type="text">My journal | A personal journal</title>
+  <subtitle type="text">A personal journal</subtitle>
+  
+  <author>
+    <name>Your name</name>
+    
+  </author>
+  <rights>(c) 2026, Your name</rights>
+  
+  <entry>
+    <title type="text">A small project for the weekend</title>
+    <link href="https://dieghernan.github.io/chulapa-101/blog/2026/05/18/small-project/" rel="alternate" type="text/html" title="A small project for the weekend" />
+    <published>2026-05-18T00:00:00+00:00</published>
+    <updated>2026-05-18T00:00:00+00:00</updated>
+    <id>https://dieghernan.github.io/chulapa-101/blog/2026/05/18/small-project/</id>
+    <content type="html" xml:base="https://dieghernan.github.io/chulapa-101/blog/2026/05/18/small-project/">&lt;p&gt;1 min.&lt;/p&gt;
+    &lt;p&gt;This weekend’s project is deliberately small: make a notebook for the things
 I want to try. One page per idea, with room for a sketch and the next step.&lt;/p&gt;
 
 &lt;h2 id=&quot;three-things-to-start-with&quot;&gt;Three things to start with&lt;/h2&gt;
@@ -49,29 +46,26 @@ I want to try. One page per idea, with room for a sketch and the next step.&lt;/
 
 &lt;p&gt;I will choose one idea and write down what happened, including the parts that
 did not work. A small finished experiment teaches me more than a perfect plan.&lt;/p&gt;
-
-		</content>
-		
-		<author>
-			<name>Your name</name>
-			
-		</author>
-		<summary type="html">&lt;p&gt;This weekend’s project is deliberately small: make a notebook for the things
+</content>
+    <author>
+      <name>Your name</name>
+      
+    </author>
+    <summary type="html">&lt;p&gt;This weekend’s project is deliberately small: make a notebook for the things
 I want to try. One page per idea, with room for a sketch and the next step.&lt;/p&gt;
 </summary>
-		<category term="posts"/>
-		<category term="journal"/><category term="projects"/>
-	</entry><entry>
-		<title type="html">An evening walk through Madrid</title>
-		<link href="https://dieghernan.github.io/chulapa-101/blog/2026/04/12/evening-walk/" rel="alternate" type="text/html" title="An evening walk through Madrid"/>
-		<published>2026-04-12T00:00:00+00:00</published>
-		<updated>2026-04-12T00:00:00+00:00</updated>
-		<id>https://dieghernan.github.io/chulapa-101/blog/2026/04/12/evening-walk/</id>
-		<content type="html" xml:base="https://dieghernan.github.io/chulapa-101/blog/2026/04/12/evening-walk/">
-		
-  		
-	&lt;p&gt;1 min.&lt;/p&gt;
-			&lt;p&gt;A familiar street feels different after dark. The traffic keeps moving, but
+    <category term="posts" />
+    <category term="journal" />
+    <category term="projects" />
+    </entry>
+  <entry>
+    <title type="text">An evening walk through Madrid</title>
+    <link href="https://dieghernan.github.io/chulapa-101/blog/2026/04/12/evening-walk/" rel="alternate" type="text/html" title="An evening walk through Madrid" />
+    <published>2026-04-12T00:00:00+00:00</published>
+    <updated>2026-04-12T00:00:00+00:00</updated>
+    <id>https://dieghernan.github.io/chulapa-101/blog/2026/04/12/evening-walk/</id>
+    <content type="html" xml:base="https://dieghernan.github.io/chulapa-101/blog/2026/04/12/evening-walk/">&lt;p&gt;1 min.&lt;/p&gt;
+    &lt;p&gt;A familiar street feels different after dark. The traffic keeps moving, but
 lit windows and reflections turn an ordinary walk into something worth slowing
 down for.&lt;/p&gt;
 
@@ -92,30 +86,27 @@ to have a completely different rhythm.&lt;/p&gt;
 time to look up and no pressure to turn every outing into a plan.&lt;/p&gt;
 
 &lt;p&gt;The best part is coming home with something I would otherwise have missed.&lt;/p&gt;
-
-		</content>
-		
-		<author>
-			<name>Your name</name>
-			
-		</author>
-		<summary type="html">&lt;p&gt;A familiar street feels different after dark. The traffic keeps moving, but
+</content>
+    <author>
+      <name>Your name</name>
+      
+    </author>
+    <summary type="html">&lt;p&gt;A familiar street feels different after dark. The traffic keeps moving, but
 lit windows and reflections turn an ordinary walk into something worth slowing
 down for.&lt;/p&gt;
 </summary>
-		<category term="posts"/>
-		<category term="journal"/><category term="walks"/>
-	</entry><entry>
-		<title type="html">A first story</title>
-		<link href="https://dieghernan.github.io/chulapa-101/blog/2026/01/01/first-post/" rel="alternate" type="text/html" title="A first story"/>
-		<published>2026-01-01T00:00:00+00:00</published>
-		<updated>2026-01-01T00:00:00+00:00</updated>
-		<id>https://dieghernan.github.io/chulapa-101/blog/2026/01/01/first-post/</id>
-		<content type="html" xml:base="https://dieghernan.github.io/chulapa-101/blog/2026/01/01/first-post/">
-		
-  		
-	&lt;p&gt;1 min.&lt;/p&gt;
-			&lt;p&gt;Every journal begins with a first story. This is a small space to pause,
+    <category term="posts" />
+    <category term="journal" />
+    <category term="walks" />
+    </entry>
+  <entry>
+    <title type="text">A first story</title>
+    <link href="https://dieghernan.github.io/chulapa-101/blog/2026/01/01/first-post/" rel="alternate" type="text/html" title="A first story" />
+    <published>2026-01-01T00:00:00+00:00</published>
+    <updated>2026-01-01T00:00:00+00:00</updated>
+    <id>https://dieghernan.github.io/chulapa-101/blog/2026/01/01/first-post/</id>
+    <content type="html" xml:base="https://dieghernan.github.io/chulapa-101/blog/2026/01/01/first-post/">&lt;p&gt;1 min.&lt;/p&gt;
+    &lt;p&gt;Every journal begins with a first story. This is a small space to pause,
 notice the world around you and share what you find.&lt;/p&gt;
 
 &lt;h2 id=&quot;a-place-to-begin&quot;&gt;A place to begin&lt;/h2&gt;
@@ -134,16 +125,16 @@ be a photograph or a short list. Over time, I hope they become a useful record
 of what caught my attention.&lt;/p&gt;
 
 &lt;p&gt;If you are new here, &lt;a href=&quot;/chulapa-101/about/&quot;&gt;read a little about this journal&lt;/a&gt;.&lt;/p&gt;
-
-		</content>
-		
-		<author>
-			<name>Your name</name>
-			
-		</author>
-		<summary type="html">&lt;p&gt;Every journal begins with a first story. This is a small space to pause,
+</content>
+    <author>
+      <name>Your name</name>
+      
+    </author>
+    <summary type="html">&lt;p&gt;Every journal begins with a first story. This is a small space to pause,
 notice the world around you and share what you find.&lt;/p&gt;
 </summary>
-		<category term="posts"/>
-		<category term="beginnings"/><category term="journal"/>
-	</entry></feed>
+    <category term="posts" />
+    <category term="beginnings" />
+    <category term="journal" />
+    </entry>
+</feed>

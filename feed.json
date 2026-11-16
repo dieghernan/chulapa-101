@@ -1,0 +1,52 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "My journal",
+  "home_page_url": "https://dieghernan.github.io/chulapa-101/",
+  "feed_url": "https://dieghernan.github.io/chulapa-101/feed.json",
+  "language": "en-US",
+  "description": "Stories, places and everyday discoveries",
+  
+  
+  "authors": [{
+    "name": "Your name"
+  }],
+  "items": [
+    {
+      "id": "https://dieghernan.github.io/chulapa-101/blog/2026/05/18/small-project/",
+      "url": "https://dieghernan.github.io/chulapa-101/blog/2026/05/18/small-project/",
+      "title": "A small project for the weekend",
+      "content_html": "<p>This weekend’s project is deliberately small: make a notebook for the things\nI want to try. One page per idea, with room for a sketch and the next step.</p>\n\n<h2 id=\"three-things-to-start-with\">Three things to start with</h2>\n\n<ol>\n  <li>A place to collect ideas before they get lost.</li>\n  <li>A short list of materials I already have.</li>\n  <li>One action I can finish in an afternoon.</li>\n</ol>\n\n<p>The notebook does not need to be beautiful. It needs to be easy to open.</p>\n\n<h2 id=\"a-few-useful-places\">A few useful places</h2>\n\n<ul>\n  <li><a href=\"https://publicdomainreview.org/\">The Public Domain Review</a> for unexpected stories and visual inspiration.</li>\n  <li><a href=\"https://www.gutenberg.org/\">Project Gutenberg</a> for books to browse and return to.</li>\n  <li><a href=\"https://dieghernan.github.io/chulapa/\"><span class=\"chulapa\">Chulapa</span></a> for the theme behind this journal.</li>\n</ul>\n\n<h2 id=\"the-next-step\">The next step</h2>\n\n<p>I will choose one idea and write down what happened, including the parts that\ndid not work. A small finished experiment teaches me more than a perfect plan.</p>\n",
+      "date_published": "2026-05-18T00:00:00+00:00",
+      "summary": "This weekend’s project is deliberately small: make a notebook for the things I want to try. One page per idea, with room for a sketch and the next step.",
+      "tags": ["journal","projects"],
+      "authors": [{
+        "name": "Your name"
+      }]
+    },
+    {
+      "id": "https://dieghernan.github.io/chulapa-101/blog/2026/04/12/evening-walk/",
+      "url": "https://dieghernan.github.io/chulapa-101/blog/2026/04/12/evening-walk/",
+      "title": "An evening walk through Madrid",
+      "content_html": "<p>A familiar street feels different after dark. The traffic keeps moving, but\nlit windows and reflections turn an ordinary walk into something worth slowing\ndown for.</p>\n\n<h2 id=\"looking-up\">Looking up</h2>\n\n<p>At Plaza de Cibeles, I stopped to look at the towers instead of the crossing\nsignal. The building glowed against the sky, and for a moment the city seemed\nto have a completely different rhythm.</p>\n\n<figure>\n<img src=\"/chulapa-101/assets/img/madrid-at-night.jpg\" alt=\"Palacio de Cibeles illuminated against a dark blue sky, with a fountain and cars in the foreground\" width=\"640\" height=\"959\" loading=\"lazy\" class=\"img-fluid\" />\n<figcaption class=\"mt-2\"><a href=\"https://unsplash.com/photos/CRMjqDZwxS4\">Palacio de Cibeles after dark. Photograph by Quique Olivar on Unsplash.</a></figcaption>\n</figure>\n\n<h2 id=\"a-small-habit\">A small habit</h2>\n\n<p>I want to take more walks without a destination. Just one neighborhood, enough\ntime to look up and no pressure to turn every outing into a plan.</p>\n\n<p>The best part is coming home with something I would otherwise have missed.</p>\n",
+      "date_published": "2026-04-12T00:00:00+00:00",
+      "summary": "A familiar street feels different after dark. The traffic keeps moving, but lit windows and reflections turn an ordinary walk into something worth slowing down for.",
+      "tags": ["journal","walks"],
+      "authors": [{
+        "name": "Your name"
+      }]
+    },
+    {
+      "id": "https://dieghernan.github.io/chulapa-101/blog/2026/01/01/first-post/",
+      "url": "https://dieghernan.github.io/chulapa-101/blog/2026/01/01/first-post/",
+      "title": "A first story",
+      "content_html": "<p>Every journal begins with a first story. This is a small space to pause,\nnotice the world around you and share what you find.</p>\n\n<h2 id=\"a-place-to-begin\">A place to begin</h2>\n\n<p>I used to wait until I had something big to write about. A finished project,\na long trip or an idea polished enough to explain. That left a lot of ordinary\ndays unrecorded.</p>\n\n<p>This time, I am starting with the small things: a good walk, a paragraph from a\nbook and the first rough sketch of a project. They count too.</p>\n\n<h2 id=\"keeping-it-simple\">Keeping it simple</h2>\n\n<p>The plan is to write a little, often. Some posts will be stories; others will\nbe a photograph or a short list. Over time, I hope they become a useful record\nof what caught my attention.</p>\n\n<p>If you are new here, <a href=\"/chulapa-101/about/\">read a little about this journal</a>.</p>\n",
+      "date_published": "2026-01-01T00:00:00+00:00",
+      "summary": "Every journal begins with a first story. This is a small space to pause, notice the world around you and share what you find.",
+      "tags": ["journal","beginnings"],
+      "authors": [{
+        "name": "Your name"
+      }]
+    }
+    
+  ]
+}
