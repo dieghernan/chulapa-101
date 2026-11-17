@@ -255,4 +255,7 @@ in with PhotoSwipe.
 
 This sample clip from the theme documentation shows a lagoon from above.
 
-{% include snippets/video.html fileurl="https://dieghernan.github.io/chulapa/assets/mp4/sample.mp4" name="Aerial lagoon sample" %}
+{% include snippets/video.html fileurl="https://dieghernan.github.io/chulapa/assets/mp4/sample.mp4"
+   name="Aerial lagoon sample"
+   thumbnail_url="https://dieghernan.github.io/chulapa/assets/mp4/sample-thumbnail.jpg"
+   upload_date="2021-08-20T15:24:34+02:00" %}
