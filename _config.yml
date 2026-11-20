@@ -8,8 +8,8 @@
 github: [metadata]
 
 # Choose one installation method.
-# Remote theme: append @TAG to pin an existing release.
-remote_theme: dieghernan/chulapa
+# Remote theme: keep the release tag for reproducible builds.
+remote_theme: dieghernan/chulapa@v2.3.0
 
 # Gem-based theme: remove remote_theme and add the gem to Gemfile.
 # theme: chulapa-jekyll
@@ -33,7 +33,11 @@ timezone                :     # e.g. Europe/Madrid. See https://jekyllrb.com/doc
 og_locale               :     # Optional language_TERRITORY for social metadata
 og_locale_alternate     : []  # Optional list of translated locales, e.g. [es_ES, fr_FR]
 og_image                :     #default[author.avatar (see below)] or [github-avatar]
-# og_image_alt: Describe the site-wide og_image (Chulapa v2.2.1 development).
+# Describe the site image above. These values apply when a page uses that image.
+# og_image_alt: A street in Madrid
+# og_image_width: 1200
+# og_image_height: 630
+# og_image_type: image/jpeg
 twitter_site            :     # Omit the @ prefix.
 # Site author
 author:
@@ -60,8 +64,9 @@ publisher:
 
 # A.2. Font Awesome
 fa_version: # Defaults to 7. Set to 6 or 5 to use an older version.
-fa_kit_code: # Your FontAwesome kit code. If not provided a free hosted version (slower) will be loaded:  https://fontawesome.com/
-fa_v4_support: #Bool Add FontAwesome 4 support
+fa_kit_code: # Optional Font Awesome kit code. Without a kit, load the free hosted version.
+fa_v4_support: # Set to true for v4 compatibility with hosted stylesheets. With a kit, configure compatibility in the kit settings.
+# fa5_kit_code: your-kit-code # Legacy kit key. Takes precedence over fa_kit_code.
 # A.3. Analytics
 # gtag_id: Google Analytics 4 measurement ID, e.g. G-XXXXXXXXXX.
 # analytics_id: legacy Universal Analytics ID; use gtag_id for new setups.
@@ -90,6 +95,11 @@ search:
   show_attrib           : #default ["true"] Show attributions/logo on search engine
   algolia_logo          : true # Check your plan's attribution requirements before hiding the logo.
 
+  # Legacy provider-specific limits take precedence over maxwords.
+  # lunr_maxwords: 30
+  # simplesearch_maxwords: 30
+  # fusejs_maxwords: 30
+
 google_cse_id: #Your cse id
 # Algolia indexing uses jekyll-algolia. Adapt these indexing options to your site.
 algolia:
@@ -106,19 +116,21 @@ algolia:
   extensions_to_index:      #Optional
     - html
     - md
-  searchableAttributes:     #Optional
-    - title
-    - headings
-    - unordered(content)
-    - unordered(subtitle)
-    - unordered(categories)
-    - unordered(collection)
-    - unordered(tags)
-  customRanking:            #Optional
-    - desc(include_on_search)
-    - desc(title)
-    - desc(content)
-    - desc(subtitle)
+  # nodes_to_index: 'p,h2,h3,h4,li' # CSS selector for rendered elements. The plugin defaults to p.
+  settings:
+    searchableAttributes:
+      - title
+      - headings
+      - unordered(content)
+      - unordered(subtitle)
+      - unordered(categories)
+      - unordered(collection)
+      - unordered(tags)
+    customRanking:
+      - desc(include_on_search)
+      - desc(title)
+      - desc(content)
+      - desc(subtitle)
 
 # A.5. Comments
 # Enable show_comments on pages that should display comments.
@@ -139,7 +151,7 @@ comments:
 #   "nav" would be set on the right side. Two-level nav links available
 navbar:
   style     :  #default is the classical top navbar, set "fab" for a floating action button navbar or "dual"
-  expand    :  # At which device size expand the navbar menu. default[md] https://getbootstrap.com/docs/4.5/layout/overview/
+  expand    :  # At which device size expand the navbar menu. default[md] https://getbootstrap.com/docs/4.6/layout/overview/
   brand:
     title   : Home # Title in navbar
     url     :  # default["url/baseurl"]
@@ -175,7 +187,7 @@ footer:
 # C.1. Google Fonts
 # Google Fonts https://fonts.google.com/, add as many as you need
 googlefonts:
- # - url : # 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'
+  # - url: 'https://fonts.googleapis.com/css2?family=Raleway&family=Rubik&display=swap'
 
 # C.2. Skin, syntax highlighting and colors
 chulapa-skin:
@@ -184,6 +196,9 @@ chulapa-skin:
   autothemer    :  # Bool: Use autotheming
   vars          :
     primary     :   #default ["#007bff"] - Bootstrap blue
+    # font-family-base: "Rubik, sans-serif"
+    # headings-font-family: "Raleway, sans-serif"
+    # For more Sass variables, see docs/variable-dictionary.
 
 # Optional second skin (Chulapa v2.2.0+). Set its skin name to enable Light, Dark and Auto.
 chulapa-skin-dark:
@@ -213,12 +228,13 @@ collections: {} # Add named collections here when you need them.
 collections_dir     : "" # Empty means the site root.
 permalink           : /blog/:year/:month/:day/:title/
 
-# Optional series navigation (Chulapa v2.2.1 development).
+# Optional series navigation (Chulapa v2.3.0).
 # Each member sets the series ID and order in its front matter.
-# See docs/04-layouts#series-navigation for optional part_label and index_label.
 series:
   starter-tour:
     label: Starter tour
+    # part_label: Part
+    # index_label: Series index
 
 # D.3. Front matter defaults
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/
@@ -258,6 +274,20 @@ defaults:
       show_categories   : true
       show_author       : true
       show_toc          : false
+      # Enable a citation block on every post (see docs/04-layouts#make-a-post-citable).
+      # citation:
+      #   type: post-weblog
+  # Assign a group to gallery images (see docs/29-add-gallery).
+  # - scope:
+  #     path: "assets/img/gallery"
+  #   values:
+  #     image_col: gallery
+
+# D.4. Optional jekyll-feed plugin (see docs/57-jekyll-feed).
+# Install and enable jekyll-feed separately. Use a path distinct from the theme's feeds.
+# feed:
+#   path: /feed.xml
+
 # XX. Other settings
 # Adapt Jekyll settings to your site; keep jekyll-include-cache enabled.
 # XX.1. HTML compression
@@ -273,6 +303,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-sitemap
   - jekyll-remote-theme
+  # - jekyll-feed # Enable only if you use the separate feed plugin.
 
 # XX.3. Files to exclude or include
 exclude:
